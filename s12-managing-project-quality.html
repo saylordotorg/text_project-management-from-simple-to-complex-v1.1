@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Managing Project Quality</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s11-estimating-and-managing-costs.html"><img src="shared/images/batch-left.png"></a> <a href="s11-estimating-and-managing-costs.html">Previous Chapter</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s13-managing-project-risk.html">Next Chapter</a> <a href="s13-managing-project-risk.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="chapter" id="fwk-38087-ch10" version="5.0" lang="en">
+    <h1 class="title editable block">
+<span class="title-prefix">Chapter 10</span> Managing Project Quality</h1>
+    <p class="para editable block" id="fwk-38087-ch10_p01">Project managers have two different interests in quality. Some projects are performed to provide a significant improvement in the quality of an existing process, and the project activities themselves must reflect high-quality standards. A basic knowledge of the statistics and procedures used in quality control will help the project manager understand the objectives of step projects and perform projects in companies that are committed to high-quality standards.</p>
+</div>
+<div class="section" id="fwk-38087-ch10_s01" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">10.1</span> Quality and Statistics</h2>
+    <div class="learning_objectives editable block" id="fwk-38087-ch10_s01_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="fwk-38087-ch10_s01_l01">
+            <li>Define quality.</li>
+            <li>Define and explain statistics terms used in quality control.</li>
+            <li>Estimate the likelihood of samples falling within one, two, or three standard deviations of the mean given a normal distribution caused by random factors.</li>
+        </ol>
+    </div>
+    <div class="section" id="fwk-38087-ch10_s01_s01">
+        <h2 class="title editable block">Definitions of Quality and Grade</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s01_s01_p01"><span class="margin_term"><a class="glossterm">Quality</a><span class="glossdef">Degree to which a set of inherent characteristics fulfill requirements.</span></span> is a relative term, which means that something is of high or low quality compared to what it is required to be. According to the International Organization for Standardization (ISO), quality is “the degree to which a set of inherent characteristics fulfill requirements.”<span class="footnote" id="fwk-38087-fn10_001">International Organization for Standardization, <em class="emphasis">Quality Management Systems—Fundamentals and Vocabulary</em> (Geneva: ISO Press, 2005), in Project Management Institute, Inc., <em class="emphasis">A Guide to the Project Management Body of Knowledge (PMBOK Guide)</em>, 4th ed. (Newtown Square, PA: Project Management Institute, Inc., 2008), 190.</span> The requirements of a product or process can be categorized or given a <span class="margin_term"><a class="glossterm">grade</a><span class="glossdef">Category of product or service requirements.</span></span>. The quality is determined by how well something meets the requirements of its grade. Consider the following examples.</p>
+        <div class="callout editable block" id="fwk-38087-ch10_s01_s01_n01">
+            <h3 class="title">Quality of Gasoline Grades</h3>
+            <p class="para" id="fwk-38087-ch10_s01_s01_p02">Petroleum refiners provide gasoline in several different grades based on the octane rating because higher octane ratings are suitable for higher compression engines. Gasoline must not be contaminated with dirt or water, and the actual performance of the fuel must be close to its octane rating. A shipment of low-grade gasoline graded as 87 octane that is free of water or other contaminants would be of high quality, while a shipment of high grade 93 octane gas that is contaminated with dirt would be of low quality.</p>
+        </div>
+        <div class="callout editable block" id="fwk-38087-ch10_s01_s01_n02">
+            <h3 class="title">Quality of Furniture Packing in John’s Move</h3>
+            <p class="para" id="fwk-38087-ch10_s01_s01_p03">John has antique furniture that is in excellent condition that was left to him by his grandmother. The pieces are important to John for sentimental reasons and they are also valuable. John decides to hire movers (high-grade professionals) to load his furniture into the truck using appropriate padding and restraints to prevent dents and scratches during the long trip to Atlanta and then to unload the truck in Atlanta. John’s standard for high quality is that no observable damage occurs to his large pieces of furniture, especially the antiques. If the furniture arrives in his new apartment without a single dent, scratch, or other damage, the activity will be of high quality.</p>
+            <p class="para" id="fwk-38087-ch10_s01_s01_p04">John’s standard for packing his kitchen is lower. His dishes are old and cheap, so he decides to trust his inexperienced friends (low-grade amateurs) to help him pack his kitchen. If a few of the dishes or glassware are chipped or broken in the process, the savings in labor cost will more than make up for the loss, and the dishes can be easily replaced. If John has a few chipped dishes and a broken glass or two by the time he is unpacked in Atlanta, he will consider the kitchen packing to be of high quality.</p>
+        </div>
+        <p class="para editable block" id="fwk-38087-ch10_s01_s01_p05">For most people, the term quality also implies good value—getting your money’s worth. For example, even low-grade products should still work as expected, be safe to use, and last a reasonable amount of time.</p>
+    </div>
+    <div class="section" id="fwk-38087-ch10_s01_s02">
+        <h2 class="title editable block">Statistics Terminology</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s01_s02_p01">Determining how well products meet grade requirements is done by taking measurements and then interpreting those measurements. <span class="margin_term"><a class="glossterm">Statistics</a><span class="glossdef">Mathematical interpretation of numerical data.</span></span>—the mathematical interpretation of numerical data—is useful when interpreting large numbers of measurements and is used to determine how well the product meets a specification when the same product is made repeatedly. Measurements made on samples of the product must be between <span class="margin_term"><a class="glossterm">control limits</a><span class="glossdef">Upper and lower extremes of allowable variation.</span></span>—the upper and lower extremes of allowable variation—and it is up to management to design a process that will consistently produce products between those limits.</p>
+        <div class="callout editable block" id="fwk-38087-ch10_s01_s02_n01">
+            <h3 class="title">Setting Control Limits in Gasoline Production</h3>
+            <p class="para" id="fwk-38087-ch10_s01_s02_p02">A petroleum refinery produces large quantities of fuel in several grades. Samples of the fuels are extracted and measured at regular intervals. If a fuel is supposed to have an 87 octane performance, samples of the fuel should produce test results that are close to that value. Many of the samples will have scores that are different from 87. The differences are due to random factors that are difficult or expensive to control. Most of the samples should be close to the 87 rating and none of them should be too far off. The manufacturer has grades of 85 and 89, so they decide that none of the samples of the 87 octane fuel should be less than 86 or higher than 88.</p>
+        </div>
+        <p class="para editable block" id="fwk-38087-ch10_s01_s02_p03">If a process is designed to produce a product of a certain size or other measured characteristic, it is impossible to control all the small factors that can cause the product to differ slightly from the desired measurement. Some of these factors will produce products that have measurements that are larger than desired and some will have the opposite effect. If several random factors are affecting the process, they tend to offset each other most of the time, and the most common results are near the middle of the range. This idea is called the <span class="margin_term"><a class="glossterm">central limit theorem</a><span class="glossdef">Idea that if variation is caused by several random factors, they will generally cancel each other out and most measurements will be near the middle of the range of variation.</span></span>.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s01_s02_p04">If the range of possible measurement values is divided equally into subdivisions called <span class="margin_term"><a class="glossterm">bins</a><span class="glossdef">Equal size ranges into which measurements are sorted to obtain a frequency distribution.</span></span>, the measurements can be sorted, and the number of measurements that fall into each bin can be counted. The result is a <span class="margin_term"><a class="glossterm">frequency distribution</a><span class="glossdef">The number of measurements that fall into defined bins.</span></span> that shows how many measurements fall into each bin. If the effects that are causing the differences are random and tend to offset each other, the frequency distribution is called a <span class="margin_term"><a class="glossterm">normal distribution</a><span class="glossdef">Frequency distribution that looks like a bell and is the result of offsetting random variations.</span></span>, which resembles the shape of a bell with edges that flare out. The edges of a theoretical normal distribution curve get very close to zero but do not reach zero.</p>
+        <div class="callout editable block" id="fwk-38087-ch10_s01_s02_n02">
+            <h3 class="title">Normal Distribution of Gasoline Samples</h3>
+            <p class="para" id="fwk-38087-ch10_s01_s02_p05">A refinery’s quality control manager measures many samples of 87 octane gasoline, sorts the measurements by their octane rating into bins that are 0.1 octane wide, and then counts the number of measurements in each bin. Then she creates a frequency distribution chart of the data, as shown in <a class="xref" href="#fwk-38087-ch10_s01_s02_f01">Figure 10.1 "Normal Distribution of Measurements of Gasoline Samples"</a>.</p>
+        </div>
+        <p class="para editable block" id="fwk-38087-ch10_s01_s02_p06">If the measurements of product samples are distributed equally above and below the center of the distribution as they are in <a class="xref" href="#fwk-38087-ch10_s01_s02_f01">Figure 10.1 "Normal Distribution of Measurements of Gasoline Samples"</a>, the average of those measurements is also the center value that is called the <span class="margin_term"><a class="glossterm">mean</a><span class="glossdef">Average found by summing the values and dividing by the number of values.</span></span> and is represented in formulas by the lowercase Greek letter µ (pronounced mu). The amount of difference of the measurements from the central value is called the sample standard deviation or just the <span class="margin_term"><a class="glossterm">standard deviation</a><span class="glossdef">A type of average that takes into account positive and negative values where a sample is used instead of all the measurements. To calculate the standard deviation, first the difference between each value and the mean is squared. The squared values are summed and divided by the number of values minus one. The square root of this value is the standard deviation, also known as the Sample Standard Deviation.</span></span>. The first step in calculating the standard deviation is subtracting each measurement from the central value and then squaring that difference. (Recall from your mathematics courses that squaring a number is multiplying it by itself and that the result is always positive.) The next step is to sum these squared values and divide by the number of values minus one. The last step is to take the square root. The result can be thought of as an average difference. (If you had used the usual method of taking an average, the positive and negative numbers would have summed to zero.) Mathematicians represent the standard deviation with the lowercase Greek letter σ (pronounced sigma). If all the elements of a group are measured, it is called the standard deviation of the population and the second step does not use a minus one.</p>
+        <div class="figure large editable block" id="fwk-38087-ch10_s01_s02_f01">
+            <p class="title"><span class="title-prefix">Figure 10.1</span> Normal Distribution of Measurements of Gasoline Samples</p>
+            <img src="section_12/5d7e5c4d768f23380a02541642464422.jpg">
+            <p class="para">The chart shows that the most common measurements of octane rating are close to 87 and that the other measurements are distributed equally above and below 87. The shape of the distribution chart supports the central limit theorem’s assumption that the factors that are affecting the octane rating are random and tend to offset each other, which is indicated by the symmetric shape. This distribution is a classic example of a normal distribution. The quality control manager notices that none of the measurements are above 88 or below 86 so they are within control limits and concludes that the process is working satisfactorily.</p>
+        </div>
+        <div class="callout block" id="fwk-38087-ch10_s01_s02_n03">
+            <h3 class="title">Standard Deviation of Gasoline Samples</h3>
+            <p class="para" id="fwk-38087-ch10_s01_s02_p07">The refinery’s quality control manager uses the standard deviation function in his spreadsheet program to find the standard deviation of the sample measurements and finds that for his data, the standard deviation is 0.3 octane. She marks the range on the frequency distribution chart to show the values that fall within one sigma (standard deviation) on either side of the mean. See the figure below.</p>
+            <div class="figure large" id="fwk-38087-ch10_s01_s02_f02">
+                <p class="title"><span class="title-prefix">Figure 10.2</span> </p>
+                <img src="section_12/616186a671b7e5ed25a99197bad34abe.jpg">
+                <p class="para">Most of the measurements are within 0.3 octane of 87.</p>
+            </div>
+        </div>
+        <p class="para editable block" id="fwk-38087-ch10_s01_s02_p08">For normal distributions, about 68.3 percent of the measurements fall within one standard deviation on either side of the mean. This is a useful rule of thumb for analyzing some types of data. If the variation between measurements is caused by random factors that result in a normal distribution and someone tells you the mean and the standard deviation, you know that a little over two-thirds of the measurements are within a standard deviation on either side of the mean. Because of the shape of the curve, the number of measurements within two standard deviations is 95.4 percent, and the number of measurements within three standard deviations is 99.7 percent. For example, if someone said the average (mean) height for adult men in the United States is 5 feet 10 inches (70 inches) and the standard deviation is about 3 inches, you would know that 68 percent of the men in the United States are between five feet seven inches (67 inches) and six feet one inch (73 inches) in height. You would also know that about 95 percent of the adult men in the United States were between five feet four inches and six feet four inches tall, and that almost all of them (99.7 percent) are between five feet one inches and six feet seven inches tall. These figures are referred to as the <span class="margin_term"><a class="glossterm">68-95-99.7 rule</a><span class="glossdef">Approximate percentages of measurements that are within one, two, and three standard deviations of the mean.</span></span>.</p>
+        <div class="callout block" id="fwk-38087-ch10_s01_s02_n04">
+            <h3 class="title">Almost All Samples of Gasoline are Within Three STD</h3>
+            <p class="para" id="fwk-38087-ch10_s01_s02_p09">The refinery’s quality control manager marks the ranges included within two and three standard deviations, as shown below.</p>
+            <div class="figure large" id="fwk-38087-ch10_s01_s02_f03">
+                <p class="title"><span class="title-prefix">Figure 10.3</span> The 68-95-99.7 Rule</p>
+                <img src="section_12/27edc1512f836b81f3b56fccf4f2f15e.jpg">
+            </div>
+        </div>
+        <p class="para editable block" id="fwk-38087-ch10_s01_s02_p10">Some products must have less variability than others to meet their purpose. For example, if one machine drills a hole and another machine shapes a rod that will slide through the hole, it might be very important to be sure that if the smallest hole was ever matched with the widest rod, that the rod would still fit. Three standard deviations from the control limits might be fine for some products but not for others. In general, if the mean is six standard deviations from both control limits, the likelihood of a part exceeding the control limits from random variation is practically zero (2 in 1,000,000,000). Refer to <a class="xref" href="#fwk-38087-ch10_s01_s02_f04">Figure 10.4 "Meaning of Sigma Levels"</a>.</p>
+        <div class="figure large editable block" id="fwk-38087-ch10_s01_s02_f04">
+            <p class="title"><span class="title-prefix">Figure 10.4</span> Meaning of Sigma Levels</p>
+            <img src="section_12/707564a8e0b6c05ddc9d73265f55f7bf.jpg">
+            <p class="para"></p>
+        </div>
+        <div class="callout block" id="fwk-38087-ch10_s01_s02_n07">
+            <h3 class="title">A Step Project Improves Quality of Gasoline</h3>
+            <p class="para" id="fwk-38087-ch10_s01_s02_p12">A new refinery process is installed that produces fuels with less variability. The refinery’s quality control manager takes a new set of samples and charts a new frequency distribution diagram, as shown below.</p>
+            <div class="figure large" id="fwk-38087-ch10_s01_s02_f05">
+                <p class="title"><span class="title-prefix">Figure 10.5</span> Smaller Standard Deviation</p>
+                <img src="section_12/f5344e8b87c98522ec8f092bf42ce5a2.jpg">
+                <p class="para"></p>
+            </div>
+            <p class="para" id="fwk-38087-ch10_s01_s02_p13">The refinery’s quality control manager calculates that the new standard deviation is 0.2 octane. From this, he can use the 68-95-99.7 rule to estimate that 68.3 percent of the fuel produced will be between 86.8 and 87.2 and that 99.7 percent will be between 86.4 and 87.6 octane. A shorthand way of describing this amount of control is to say that it is a five-sigma production system, which refers to the five standard deviations between the mean and the control limit on each side.</p>
+        </div>
+        <div class="key_takeaways editable block" id="fwk-38087-ch10_s01_s02_n05">
+            <h3 class="title">Key Takeaways</h3>
+            <ul class="itemizedlist" id="fwk-38087-ch10_s01_s02_l01">
+                <li>Quality is the degree to which a product or service fulfills requirements and provides value for its price.</li>
+                <li>Statistics is the mathematical interpretation of numerical data, and several statistical terms are used in quality control. Control limits are the boundaries of acceptable variation.</li>
+                <li>If random factors cause variation, they will tend to cancel each other out—the central limit theorem. The central point in the distribution is the mean, which is represented by the Greek letter mu, µ. If you choose intervals called bins and count the number of samples that fall into each interval, the result is a frequency distribution. If you chart the distribution and the factors that cause variation are random, the frequency distribution is a normal distribution, which looks bell shaped.</li>
+                <li>The center of the normal distribution is called the mean, and the average variation is calculated in a special way that finds the average of the squares of the differences between samples and the mean and then takes the square root. This average difference is called the standard deviation, which is represented by the Greek letter sigma, σ.</li>
+                <li>About 68 percent of the samples are within one standard deviation, 95.4 percent are within two, and 99.7 percent are within three.</li>
+            </ul>
+        </div>
+        <div class="exercises editable block" id="fwk-38087-ch10_s01_s02_n06">
+            <h3 class="title">Exercises</h3>
+            <ol class="orderedlist" id="fwk-38087-ch10_s01_s02_l02">
+                <li>According to the ISO, quality is the degree to which a set of inherent characteristics fulfill ___________.</li>
+                <li>The upper and lower extremes of acceptable variation from the mean are called the __________ limits.</li>
+                <li>The odds that a sample’s measurement will be within one standard deviation of the mean is ____ percent.</li>
+                <li>How is quality related to grade?</li>
+                <li>If the measurements in a frequency distribution chart are grouped near the mean in normal distribution, what does that imply about the causes of the variation?</li>
+                <li>If you have a set of sample data and you had to calculate the standard deviation, what are the steps?</li>
+                <li>If a set of sample measurements has a mean of 100, a normal distribution, a standard deviation of 2, and control limits of 94 and 106, what percentage of the samples are expected to be between 94 and 106? Explain your answer.</li>
+            </ol>
+            <p class="simpara">Using Statistical Measures</p>
+            <p class="para" id="fwk-38087-ch10_s01_s02_p11">Choose two groups of people or items that have a measurable characteristic that can be compared, such as the height of adult males and females. Describe the distribution of the measurements by stating whether you think the groups have a relatively small or large standard deviation and whether the distributions overlap (e.g., some women are taller than some men even though the mean height for men is greater than the mean height for women). Demonstrate that you know how to use the following terms correctly in context:</p>
+            <ul class="itemizedlist" id="fwk-38087-ch10_s01_s02_l03">
+                <li>Normal distribution</li>
+                <li>Standard deviation</li>
+                <li>Mean</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="section" id="fwk-38087-ch10_s02" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">10.2</span> Development of Quality as a Competitive Advantage</h2>
+    <div class="learning_objectives editable block" id="fwk-38087-ch10_s02_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="fwk-38087-ch10_s02_l01">
+            <li>Describe the historical events and forces that led up to today’s emphasis on quality as a competitive requirement.</li>
+            <li>Describe quality awards in Japan and the United States.</li>
+            <li>Describe quality programs and standards such as TQM, Six Sigma, and ISO 9000.</li>
+            <li>Describe and calculate the cost of quality.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="fwk-38087-ch10_s02_p01">Quality management is an approach to work that has become increasingly important as global cooperation and competition have increased. A review of the history of quality management explains why it is so important to companies and why clients often require projects to document their processes to satisfy quality standards.</p>
+    <div class="section" id="fwk-38087-ch10_s02_s01">
+        <h2 class="title editable block">Statistical Control Before World War II</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s02_s01_p01">Prior to the late 1700s, products such as firearms and clocks were made as individual works where the parts were adjusted to each other so they could work together. If a part broke, a new one had to be made by hand to fit. In 1790 in France, Honoré Blanc demonstrated that he could make musket parts so nearly identical that a musket could be assembled from bins of parts chosen at random.<span class="footnote" id="fwk-38087-fn10_002">Ken Alder, “Innovation and Amnesia: Engineering Rationality and the Fate of Interchangeable Parts Manufacturing in France,” <em class="emphasis">Technology and Culture</em> 38, no 2 (April 1997): 273–311.</span> The practice of making parts to a high level of accuracy in their dimensions and finishes made the parts interchangeable. The use of interchangeable parts became the founding principle of assembly line manufacturing to produce all manner of goods from sewing machines to automobiles. The manufacturers of firearms and weapons were often the leaders in improving quality because reliable and safe operation of weapons and their rapid repair is a matter of life and death.</p>
+    </div>
+    <div class="section" id="fwk-38087-ch10_s02_s02">
+        <h2 class="title editable block">Statistical Control in the United States During World War II</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s02_s02_p01">During World War II, factories were converted from manufacturing consumer goods to weapons. War plants had to make large numbers of parts as fast as possible while doing it safely for the workers and for the service members who used them. Important improvements in <span class="margin_term"><a class="glossterm">quality control (QC)</a><span class="glossdef">Management of production standards through statistical interpretation of random product measurements.</span></span>—the management of production standards through statistical interpretation of random product measurements, which emphasizes consistency and accuracy—were made during this period. A key figure in the history of quality management who was an important person in the war effort was Walter Shewhart at Bell Telephone Laboratories. Shewhart recognized that real processes seldom behaved like theoretical random distributions and tended to change with time. He separated causes of variation into two categories: <span class="margin_term"><a class="glossterm">chance cause</a><span class="glossdef">Variation due to random events.</span></span> and <span class="margin_term"><a class="glossterm">assignable cause</a><span class="glossdef">Variations that can be attributed to a particular event or influence.</span></span>. Chance causes could be ignored if they did not cause too much variation, and trying to eliminate them often made the problem worse, but assignable causes could be fixed. To help distinguish between variations caused by random events and trends that indicated assignable causes, Shewhart introduced the <span class="margin_term"><a class="glossterm">control chart</a><span class="glossdef">Scatter chart with time on the horizontal axis and measurement scale on the vertical axis. It also displays the mean and control limits. It may mark two standard deviations from the mean.</span></span>, which is also known as a type of <span class="margin_term"><a class="glossterm">run chart</a><span class="glossdef">Chart of measurements that shows variations as the process progresses in time.</span></span> because data are collected while the process is running. A control chart has time on the bottom axis and a plot of sample measurements. The mean, upper control limit, lower control limit, and warning lines that are two sigma from the mean are indicated by horizontal lines.</p>
+        <div class="callout block" id="fwk-38087-ch10_s02_s02_n01">
+            <h3 class="title">Control Chart Shows Production Variation of Gasoline</h3>
+            <p class="para" id="fwk-38087-ch10_s02_s02_p03">The refinery quality control manager takes samples each day of the 87 octane gasoline for twenty days and charts the data on a control chart, as shown below.</p>
+            <div class="figure large" id="fwk-38087-ch10_s02_s02_f02">
+                <p class="title"><span class="title-prefix">Figure 10.6</span> Control Chart Displaying Variations Due to Chance Causes</p>
+                <img src="section_12/5797a8e6b9e636d43a6aa793e2b3a969.jpg">
+            </div>
+            <p class="para" id="fwk-38087-ch10_s02_s02_p04">She recognizes that the highest and lowest measurements are not part of a trend and are probably due to chance causes. However, the control chart from the next twenty days, as shown below, indicates an upward trend that might be due to an assignable cause. She alerts the process manager to let him know that there is a problem that needs to be fixed before the product exceeds the upper control limit. This might indicate the need to initiate a project to fix the problem.</p>
+            <div class="figure large" id="fwk-38087-ch10_s02_s02_f03">
+                <p class="title"><span class="title-prefix">Figure 10.7</span> Control Chart Displaying Variations That Might Be Due to an Assignable Cause</p>
+                <img src="section_12/a9180ce720637b8c7500a99ad2ad6280.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="section" id="fwk-38087-ch10_s02_s03">
+        <h2 class="title editable block">Deming and Postwar Japan</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s02_s03_p01">The most influential person in modern quality control was an American who was a hero in Japan but virtually unknown in the United States. W. Edwards Deming worked with Shewhart at Bell Labs and helped apply Shewhart’s ideas to American manufacturing processes during World War II. Following the war, American factories returned to the production of consumer goods. Many of the other major manufacturing centers in the world had been damaged by bombing during the war and took time to recover. Without the safety needs of wartime and with little competition, quality control was not a high priority for American companies.<span class="footnote" id="fwk-38087-fn10_003">John Dowd, “How the Japanese Learned to Compete,” <em class="emphasis">Asia Times</em>, October 27, 2006, <a class="link" href="http://www.atimes.com/atimes/Japan/HJ27Dh01.html">http://www.atimes.com/atimes/Japan/HJ27Dh01.html</a> (accessed August 11, 2009).</span> Management in the United States focused on increasing production to meet demand and lowering costs to increase profits.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s02_s03_p02">After the war, while the United States occupied Japan, Deming was asked by the U.S. Department of the Army to assist with the statistics of the 1950 census in Japan. Kenichi Koyanagi, the managing director of the Union of Japanese Scientists and Engineers and a very influential industrialist, asked Deming to speak to twenty-one top industrial leaders on the topic of global strategy for Japanese industry. Deming went beyond Shewhart’s work and talked about his philosophy of quality manufacturing and how the responsibility for quality begins with management. He explained that a corporate culture devoted to producing high-quality products would result in less waste, lower costs, greater client loyalty, and greater market share. With Koyanagi’s support, Deming’s ideas were widely adopted by these influential leaders.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s02_s03_p03">Deming described his philosophy as a system of profound knowledge, which has four parts:</p>
+        <ol class="orderedlist editable block" id="fwk-38087-ch10_s02_s03_l01">
+            <li>
+<em class="emphasis">Appreciation of a system</em>. Understanding how suppliers, producers, and clients interact</li>
+            <li>
+<em class="emphasis">Knowledge of variation</em>. Understanding statistical variation</li>
+            <li>
+<em class="emphasis">Theory of knowledge</em>. Understanding what can be known and what cannot</li>
+            <li>
+<em class="emphasis">Knowledge of psychology</em>. Understanding human nature</li>
+        </ol>
+        <p class="para editable block" id="fwk-38087-ch10_s02_s03_p04">In 1950, the Japanese created the <span class="margin_term"><a class="glossterm">Deming prize</a><span class="glossdef">Award for quality in Japan named after W. Edwards Deming, an American.</span></span> in Deming’s honor, which is awarded to an individual and a company for major advances in quality improvements. In 1960, Deming was awarded the Order of the Sacred Treasure, Second Class by the Prime Minister on behalf of Emperor Hirohito.</p>
+    </div>
+    <div class="section" id="fwk-38087-ch10_s02_s04">
+        <h2 class="title editable block">Quality Management in America</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s02_s04_p01">By the 1970s, Japanese companies had a reputation for high quality and were taking market share from American companies, but Deming’s teachings were virtually unknown in his own country. It was not until 1980 that America became aware of Deming when his work was described in an NBC documentary titled <em class="emphasis">If Japan Can, Why Can’t We</em>?<span class="footnote" id="fwk-38087-fn10_004">John Dowd, “How the Japanese Learned to Compete,” <em class="emphasis">Asia Times</em>, October 27, 2006, <a class="link" href="http://www.atimes.com/atimes/Japan/HJ27Dh01.html">http://www.atimes.com/atimes/Japan/HJ27Dh01.html</a> (accessed August 11, 2009).</span> By then, Deming was eighty years old and the producer of the show originally assumed he was dead.<span class="footnote" id="fwk-38087-fn10_005">Thomas J. Boardman, “The Statistician Who Changed the World: W. Edwards Deming, 1900–1993,” <em class="emphasis">The American Statistician</em> 48 (August 1994): 179–87.</span></p>
+        <p class="para editable block" id="fwk-38087-ch10_s02_s04_p02">In 1982, Deming’s book was published and later retitled <em class="emphasis">Out of Crisis</em>, in 1986.<span class="footnote" id="fwk-38087-fn10_006">W. Edwards Deming, <em class="emphasis">Out of the Crisis</em> (Boston: MIT Press, 1982).</span> It was aimed at explaining his system to American manufacturers and the American public. In the book, Deming described fourteen principles of management to guide the implementation of his philosophy. Some of them were challenges to Western managers and very different from the thinking that was prevalent at the time. In brief, they are as follows:</p>
+        <ol class="orderedlist editable block" id="fwk-38087-ch10_s02_s04_l01">
+            <li>Create constancy of purpose toward improvement of product and service.</li>
+            <li>Adopt a new philosophy. We are in a new economic age. Western management must awaken to the challenge, learn their responsibilities, and take on leadership for a change.</li>
+            <li>Cease dependence on inspection to achieve quality. Eliminate the need for inspection on a mass basis by building quality into the product in the first place.</li>
+            <li>End the practice of awarding business on the basis of price tag. Instead, minimize cost. Move toward a single supplier for any one item, on a long-term relationship of loyalty and trust.</li>
+            <li>Improve constantly and forever the system of production and service to improve quality and productivity and thus constantly decrease costs.</li>
+            <li>Institute training on the job.</li>
+            <li>Institute leadership. The aim of supervision should be to help people and machines and gadgets to do a better job. Supervision of management is in need of overhaul, as well as supervision of production workers.</li>
+            <li>Drive out fear, so that everyone may work effectively for the company.</li>
+            <li>Break down barriers between departments.</li>
+            <li>Eliminate slogans, exhortations, and targets for the workforce asking for zero defects and new levels of productivity.</li>
+            <li>Eliminate work standards (quotas) on the factory floor. Substitute leadership.</li>
+            <li>Remove barriers that rob the hourly worker of his right to pride of workmanship.</li>
+            <li>Institute a vigorous program of education and self-improvement.</li>
+            <li>Put everybody in the company to work to accomplish the transformation. The transformation is everybody’s job.</li>
+        </ol>
+        <p class="para editable block" id="fwk-38087-ch10_s02_s04_p03">Between 1979 and 1982, Ford Motor Company lost $3 billion, and they were looking for solutions to their problems. They chose to apply Deming’s approach to develop the new Taurus-Sable model and by 1986 had become the most profitable American auto company.<span class="footnote" id="fwk-38087-fn10_007">Gabor, A. (2001, June 13). Quality revival, Part 2: Ford embraces Six Sigma. New York Times  (Late Edition (east Coast)),  p. C.5.  Retrieved October 24, 2010, from ProQuest National Newspapers Core.
+(Document ID: 74042886).</span></p>
+        <p class="para editable block" id="fwk-38087-ch10_s02_s04_p04">Ford adopted a Japanese approach to quality known in America as <span class="margin_term"><a class="glossterm">total quality management (TQM)</a><span class="glossdef">Philosophy of managing quality adapted from a Japanese method that includes <em class="emphasis">kaizen</em>, <em class="emphasis">atarimae hinshitsu</em>, <em class="emphasis">kansei</em>, and <em class="emphasis">miryokuteki hinshitsu</em>.</span></span>. TQM in Japan has four major components:</p>
+        <ol class="orderedlist editable block" id="fwk-38087-ch10_s02_s04_l02">
+            <li>
+<span class="margin_term"><a class="glossterm">Kaizen</a><span class="glossdef">Japanese term for involvement of all members of the group (see total quality management).</span></span>. Improvement must involve all members of a company.<span class="footnote" id="fwk-38087-fn10_008">Encyclopedia Britannica, s.v. “Total Quality Control,” <a class="link" href="http://www.britannica.com/EBchecked/topic/1387304/Total-Quality-Control">http://www.britannica.com/EBchecked/topic/1387304/Total-Quality-Control</a> (accessed August 13, 2009).</span>
+</li>
+            <li>
+<span class="margin_term"><a class="glossterm">Atarimae hinshitsu</a><span class="glossdef">Japanese concept of making things work as they are intended to work (See total quality management).</span></span>. Make things work the way they are supposed to work.<span class="footnote" id="fwk-38087-fn10_009"><em class="emphasis">NationMaster.com</em>, “Miryokuteki Hinshitsu,” 2005, <a class="link" href="http://www.statemaster.com/encyclopedia/Miryokuteki-Hinshitsu">http://www.statemaster.com/encyclopedia/Miryokuteki-Hinshitsu</a> (accessed August 14, 2009).</span>
+</li>
+            <li>
+<span class="margin_term"><a class="glossterm">Kansei</a><span class="glossdef">Japanese concept of learning from the way a user applies the product in order to improve it (see total quality management).</span></span>. Learn from the way a user applies the product to make improvements.<span class="footnote" id="fwk-38087-fn10_016"><em class="emphasis">WASEDA University</em>, “Kansei Quality”  (accessed June 20, 2010).</span>
+</li>
+            <li>
+<span class="margin_term"><a class="glossterm">Miryokuteki hinshitsu</a><span class="glossdef">Japanese concept that things should have an aesthetic quality and be pleasing to use (see total quality management).</span></span>. Things should have an aesthetic quality and be pleasing to use.<span class="footnote" id="fwk-38087-fn10_010"><em class="emphasis">NationMaster.com</em>, “Miryokuteki Hinshitsu,” 2005, <a class="link" href="http://www.statemaster.com/encyclopedia/Miryokuteki-Hinshitsu">http://www.statemaster.com/encyclopedia/Miryokuteki-Hinshitsu</a> (accessed August 14, 2009).</span>
+</li>
+        </ol>
+        <p class="para editable block" id="fwk-38087-ch10_s02_s04_p05">According to Peter B. Petersen,<span class="footnote" id="fwk-38087-fn10_011">Peter B. Petersen, “Total Quality Management and the Deming Approach to Quality Management,” <em class="emphasis">Journal of Management History</em> 5, no. 8 (1999): 468–88.</span> TQM differs from the Deming approach in four fundamental ways:</p>
+        <ol class="orderedlist editable block" id="fwk-38087-ch10_s02_s04_l03">
+            <li>The Deming approach represents one philosophy that is used in its entirety or not at all. In contrast, TQM can be tailored to a particular environment.</li>
+            <li>Both agree that a long-term commitment is required by top management. However, Deming would drop clients if they started to wane, while TQM consultants were less demanding.</li>
+            <li>Deming insists on constancy of purpose, while TQM adapts to the situation, which results in lack of constancy.</li>
+            <li>Deming requires adoption of his principles of profound knowledge, while TQM lacks this unified philosophy.</li>
+        </ol>
+        <p class="para editable block" id="fwk-38087-ch10_s02_s04_p06">Many poorly qualified consulting firms provided training in TQM to American companies. The approach worked in some cases but not in others where it was applied superficially, and the movement’s credibility was diminished.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s02_s04_p07">Another approach to quality management in the United States was formulated at Motorola in 1986 and was named <span class="margin_term"><a class="glossterm">Six Sigma (6σ)</a><span class="glossdef">Quality management system that give titles to specialists and requires a cost-benefit analysis.</span></span>. The Six Sigma practices were based on Deming’s work, TQM, and others and had similarities regarding continuous efforts at improvement involving everyone at the company. It emphasized a clear focus on achieving quantifiable financial returns from any Six Sigma project. To determine the financial return on a quality initiative, the <span class="margin_term"><a class="glossterm">cost of quality (COQ)</a><span class="glossdef">Total cost of efforts to improve quality plus the cost of failure.</span></span> must be determined. The cost of quality has two parts: the cost of prevention and the cost of failure (or nonconformance). The cost of quality is the sum of the  cost of prevention and the cost of failure. If spending more on prevention reduces the cost of failure by an even greater amount, the total cost of quality is reduced.</p>
+        <ul class="itemizedlist editable block" id="fwk-38087-ch10_s02_s04_l04">
+            <li>
+                <p class="para">Cost of prevention</p>
+                <ol class="orderedlist" id="fwk-38087-ch10_s02_s04_l05" numeration="loweralpha">
+                    <li>
+<em class="emphasis">Cost of conformance</em>. Cost to improve quality</li>
+                    <li>
+<em class="emphasis">Cost of appraisal</em>. Cost to measure and evaluate quality</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para">Cost of failure</p>
+                <ol class="orderedlist" id="fwk-38087-ch10_s02_s04_l06" numeration="loweralpha">
+                    <li>
+<em class="emphasis">Internal costs</em>. Repairing bad parts before shipment or retooling a manufacturing line to reduce failures</li>
+                    <li>
+<em class="emphasis">External costs</em>. Managing returns, lawsuits, product recalls</li>
+                </ol>
+            </li>
+        </ul>
+        <p class="para editable block" id="fwk-38087-ch10_s02_s04_p08">Six Sigma identified individuals as experts in quality and awarded titles like Champion and Master Black Belt. The name Six Sigma refers to a process that has six standard deviations from the mean to either control limit that would ensure virtually zero defects. (In practice, the Six Sigma approach allows for a 1.5 sigma drift, so it is really a 4.5 sigma standard that allows approximately 3.4 defects per million products.) This approach was adopted by Jack Welch at General Electric with great success. By the late 1990s, about two-thirds of the top five hundred companies in the United States had begun Six Sigma projects, including Ford, which had allowed its quality programs to slip. To provide encouragement and a consistent standard, the U.S. government created the <span class="margin_term"><a class="glossterm">Malcolm Baldrige National Quality Award</a><span class="glossdef">U.S. award for quality named after a former secretary of commerce.</span></span> in 1987 to encourage companies to improve quality; the award was named for Malcolm Baldrige who was the U.S. secretary of commerce from 1981 to 1987.<span class="footnote" id="fwk-38087-fn10_012">National Institute of Standards and Technology, “Frequently Asked Questions about the Malcolm Baldrige National Quality Award,” November 25, 2008, <a class="link" href="http://www.nist.gov/baldrige/index.cfm">http://www.nist.gov/baldrige/index.cfm</a> (accessed August 14, 2009).</span> The criteria used to determine award winners are as follows:</p>
+        <ol class="orderedlist editable block" id="fwk-38087-ch10_s02_s04_l07">
+            <li>Leadership of senior executives</li>
+            <li>Strategic planning</li>
+            <li>Customer and market focus</li>
+            <li>Measurement, analysis, and knowledge management</li>
+            <li>Workforce focus</li>
+            <li>Process management</li>
+            <li>Results</li>
+        </ol>
+    </div>
+    <div class="section" id="fwk-38087-ch10_s02_s05">
+        <h2 class="title editable block">Trade and International Standards</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s02_s05_p01">Trade between countries increased as countries recovered from WWII and began producing consumer goods. In 1948, the General Agreement on Tariffs and Trade (GATT) established the rules for international trade in the postwar world. Through years of negotiations based on GATT, the <span class="margin_term"><a class="glossterm">World Trade Organization (WTO)</a><span class="glossdef">Negotiating forum for improving trade relationships between countries.</span></span> was created in 1995. The WTO is a negotiating forum where governments can discuss ways to help trade flow as freely as possible.<span class="footnote" id="fwk-38087-fn10_013">World Trade Organization, “Understanding the WTO: Basics,” <a class="link" href="http://www.wto.org/english/thewto_e/whatis_e/tif_e/fact1_e.htm">http://www.wto.org/english/thewto_e/whatis_e/tif_e/fact1_e.htm</a> (accessed August 14, 2009).</span></p>
+        <p class="para editable block" id="fwk-38087-ch10_s02_s05_p02">Increases in trade forced companies to improve the quality of their products to compete for clients and to exchange parts reliably between companies that used parts suppliers. To assist in developing standards for quality that would be the same between countries, an organization of 158 national standards groups formed the <span class="margin_term"><a class="glossterm">International Organization for Standardization (ISO)</a><span class="glossdef">Degree to which a set of inherent characteristics fulfill requirements.</span></span>, which is headquartered in Switzerland. For example, a company might require a parts supplier to meet certain ISO standards if it wants to bid on contracts. There are thousands of ISO standards, and they are grouped by their numbers. The ISO 9000 group of standards relate to quality:</p>
+        <ul class="itemizedlist editable block" id="fwk-38087-ch10_s02_s05_l01">
+            <li>
+<em class="emphasis">ISO 9000</em>. Fundamentals and vocabulary for this group of quality standards.</li>
+            <li>
+                <p class="para"><em class="emphasis">ISO 9001</em>. Standards for evaluating the quality management processes in an organization. It has five parts:</p>
+                <ol class="orderedlist" id="fwk-38087-ch10_s02_s05_l02" numeration="loweralpha">
+                    <li>Overall requirements for the quality management system and documentation</li>
+                    <li>Management responsibility, focus, policy, planning and objectives</li>
+                    <li>Resource management and allocation</li>
+                    <li>Product realization and process management</li>
+                    <li>Measurement, monitoring, analysis, and improvement</li>
+                </ol>
+            </li>
+            <li>
+<em class="emphasis">ISO 9004</em>. Ways to extend benefits of ISO 9001 to employees, owners, suppliers, partners, and society in general. It is a guide for top management for overall quality improvement.</li>
+            <li>
+<em class="emphasis">ISO 9011</em>. Guidance for auditing a quality system.</li>
+        </ul>
+        <p class="para editable block" id="fwk-38087-ch10_s02_s05_p03">Recommended steps for implementing a quality management system (QMS) are as follows:</p>
+        <ol class="orderedlist editable block" id="fwk-38087-ch10_s02_s05_l03">
+            <li>Fully engage top management.</li>
+            <li>Identify key processes and the interactions needed to meet quality objectives.</li>
+            <li>Implement and manage the QMS and its processes.</li>
+            <li>Build your ISO 9001-based QMS.</li>
+            <li>Implement the system, train company staff, and verify effective operation of your processes.</li>
+            <li>Manage your QMS—focus on client satisfaction, strive for continual improvement.</li>
+            <li>If necessary, seek third-party certification and registration of the QMS, or alternatively, issue a self-declaration of conformity.<span class="footnote" id="fwk-38087-fn10_014">International Organization for Standardization, <em class="emphasis">Quality Management Systems—Fundamentals and Vocabulary</em> (Geneva: ISO Press, 2005), in Project Management Institute, Inc., <em class="emphasis">A Guide to the Project Management Body of Knowledge (PMBOK Guide)</em>, 4th ed. (Newtown Square, PA: Project Management Institute, Inc., 2008).</span>
+</li>
+        </ol>
+        <div class="key_takeaways editable block" id="fwk-38087-ch10_s02_s05_n01">
+            <h3 class="title">Key Takeaways</h3>
+            <ul class="itemizedlist" id="fwk-38087-ch10_s02_s05_l04">
+                <li>The need for production of safe, reliable weapons that could be mass produced led to use of methods to assure that parts were manufactured within controlled limits. An early example is the interchangeable musket parts produced in France in 1790 and, later, the quality control methods introduced by Shewhart in the United States during World War II.</li>
+                <li>Following World War II, Japanese companies followed advice from Deming and others to make quality a top priority for management. Higher-quality products gave Japan a competitive advantage with U.S. consumers that forced U.S. firms to respond with similar quality programs.</li>
+                <li>The Deming award is given by Japan to companies doing business in Japan for high-quality standards. Similarly, the Baldrige National Quality Award is given to U.S. companies and individuals for their contribution to quality.</li>
+                <li>Total quality management is a flexible program that is adapted from Japanese practices that emphasize <em class="emphasis">kaizen</em>, participation by all; <em class="emphasis">atarimaie hinshitsu</em>, making things work the way they should; <em class="emphasis">kansei</em>, learning from the way the client uses the product to make improvements; and <em class="emphasis">miryokuteki hinshitsu</em>, giving products an aesthetic quality to make them pleasing to use. Six Sigma identifies specialists within the organization and assigns titles like Master Black Belt. Each quality project must evaluate the cost of quality to gain approval.</li>
+                <li>The International Standards Institute devises guidelines for establishing practices. The ISO 9000 group are guidelines for establishing practices that are likely to create quality products.</li>
+                <li>The cost of quality has two parts: the cost of prevention and the cost of failure. The cost of prevention includes costs to establish quality practices and the costs to verify them. The cost of failure includes internal costs before the product is sold, such as waste and fixing products, while external costs include those that occur after the product is sold, such as returns and lawsuits.</li>
+            </ul>
+        </div>
+        <div class="exercises editable block" id="fwk-38087-ch10_s02_s05_n02">
+            <h3 class="title">Exercises</h3>
+            <ol class="orderedlist" id="fwk-38087-ch10_s02_s05_l05">
+                <li>Quality control is very important in the manufacturing of _______ because the safe and reliable operation of those products is a matter of life and death.</li>
+                <li>The prize for quality in Japan is named after _________ (last name).</li>
+                <li>The quality program created at Motorola and adopted by Jack Welch at General Electric is __________.</li>
+                <li>The cost of quality considers the cost of prevention and the cost of ___________.</li>
+                <li>What is the purpose of having an international quality standard like ISO?</li>
+                <li>Describe benchmarking.</li>
+                <li>If a quality program costs $10,000 to plan and $50,000 to administer, what is the COQ if the program reduces waste by $30,000 and returns of bad products by $40,000? Explain how you calculated the answer.</li>
+            </ol>
+            <p class="simpara">Balancing Cost of Prevention to Cost of Failure</p>
+            <p class="para" id="fwk-38087-ch10_s02_s05_p04">Describe a project activity where the cost of prevention might be much higher than the cost of failure and unlikely enough to accept the risk of its failure rather than pay the cost of prevention. Similarly, describe a project activity where the cost of prevention is smaller than the cost of failure.</p>
+        </div>
+    </div>
+</div>
+<div class="section" id="fwk-38087-ch10_s03" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">10.3</span> Relevance of Quality Programs to Project Quality</h2>
+    <div class="learning_objectives editable block" id="fwk-38087-ch10_s03_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="fwk-38087-ch10_s03_l01">
+            <li>Identify the similarities between process quality management and project quality management.</li>
+            <li>Identify the differences between process quality management and project quality management.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="fwk-38087-ch10_s03_p01">Project quality refers to two distinct aspects of the project. Project quality can refer to the quality of the product or service delivered by the project. Does the end product meet client specifications? For example, does a software development project develop a program that performs to the client’s requirements? A software program that performs the basic work functions but does not integrate with existing software would not be considered a quality product, as long as the client specified that the software must interface with existing software.</p>
+    <p class="para editable block" id="fwk-38087-ch10_s03_p02">Project quality can also refer to managing the project efficiently and effectively. Almost any client specification can be met if the project manager has unlimited time and resources. Recall that high quality means meeting the requirements for a particular grade while providing value. Meeting project deliverables within the time and resource constraints is also a measure of project quality. Developing a project execution plan that matches the complexity level of the project is the most critical aspect in developing a project plan that meets project specifications within the time frame and at the lowest costs. These two aspects of project quality have similarities and differences to quality as applied to parent organizations.</p>
+    <div class="section" id="fwk-38087-ch10_s03_s01">
+        <h2 class="title editable block">Similarities</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s03_s01_p01">All successful quality programs have (1) a requirement for commitment to quality by all the employees and their partners and (2) an emphasis on error prevention and client satisfaction. To comply with TQM, Six Sigma, ISO, or other quality standards required by the client or by the project management firm, the project manager must engage in quality programs and provide documents that specifically comply with the quality standards in use. For example, a project is typically required to follow the parent organization’s work processes related to procurement and document management. Any project processes that interface with the organization’s quality processes will be required to meet the quality standards of the organization.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s03_s01_p02">If a large project involves repetitive processes such as welding or pouring concrete, statistical processes control methods can be used to maintain the quality of the product. These processes control methods are similar to those used by process managers in the manufacturing environment. The intent is for the work of the project to meet design specifications. The welding tools and equipment must be sufficient to perform the welds established in the welding specifications, and the welds must be tested, usually by an independent tester, to assure the end product meets the design specifications. The civil engineers design a concrete pour to meet certain criteria that will support a structure. The criteria, detailed in the design specifications, provide the parameters that the construction crew must meet when pouring the concrete. On large projects, which sometimes have thousands of welds and hundreds of yards of concrete to pour, the use of quality control tools and methods are critical to meeting design specifications</p>
+    </div>
+    <div class="section" id="fwk-38087-ch10_s03_s02">
+        <h2 class="title editable block">Differences</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s03_s02_p01">Because projects are temporary, spotting trends in samples produced by repetitive processes is not as important as considering quality in the planning of the project. Instead, the project manager must be able to provide documentation that demonstrates that the correct processes are in place to prevent quality failures.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s03_s02_p02">The cost of quality (COQ) must be considered in the scope document and the project budget. If the group or company that is providing the project management is separate from the client, the project budget will bear the cost of prevention while the client will reap the rewards of avoiding the costs of failure. If senior management does not recognize the benefit to the organization of reducing cost of failure by spending more on prevention during the project, the project manager can be placed in the position of producing a product or service that he or she knows could be of higher quality.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s03_s02_p03">If the cost of quality is not specifically considered and approved by senior management in the scope of the project, quality might be sacrificed during the project to meet budget goals.</p>
+        <div class="callout editable block" id="fwk-38087-ch10_s03_s02_n01">
+            <h3 class="title">Cost of Quality in an Energy Management System</h3>
+            <p class="para" id="fwk-38087-ch10_s03_s02_p04">At a midwestern university, a new building was being built, but it was over budget. To reduce the cost of the energy management system and avoid a late penalty, the project manager installed a cheaper energy management system. The less expensive system could not reduce power to the air circulation fans during peak electrical price periods, and it was not compatible with other campus systems. Five years after the building was built, when a central control unit was installed to coordinate building energy consumption, the incompatible system was replaced because it could not communicate with the central campus energy control system or save as much in electrical costs. The university did not take the time to specify the quality of the building control system in the scope statement and was not aware of the implication of the substitution at the time it was made. As a result, the cost of quality was lower in the prevention category but much higher in the cost of failure category. Because the parties acted in their own interests instead of the interest of the total university and quality was not a team effort, waste occurred and total cost increased.</p>
+        </div>
+        <p class="para editable block" id="fwk-38087-ch10_s03_s02_p05">Some separation of responsibility for quality is necessary. For example, if a project is undertaken to build a facility that makes something, it is important to distinguish between the quality of the work done by the project team and the quality of the items produced after the project is over. The client provides specifications for the facility that should result in production of quality products. It is the client’s responsibility to provide appropriate project requirements that will result in a facility that can produce quality products. It is the project manager’s responsibility to meet the project requirements. The project manager must focus on meeting requirements for project activities, but as part of the quality team, opportunities to improve the quality of the final product should be discussed with the client. If the final products fail to meet quality standards, someone will be blamed for the failure. It could be the project manager, even if he or she met all the requirements of the project specified by the client.</p>
+        <div class="callout editable block" id="fwk-38087-ch10_s03_s02_n02">
+            <h3 class="title">Cost of Prevention in Safety Training</h3>
+            <p class="para" id="fwk-38087-ch10_s03_s02_p06">An electronic parts manufacturer chooses to expand operations and needs to hire and train fifty employees. It uses its own human resources department to handle the selection and hiring of the employees, but it contracts with a nearby technical college to provide some of the training. The technical college is responsible for designing and delivering training on the topic of plant safety practices. The objective of the training project is to reduce the number of workplace accidents, but that is not the characteristic by which the quality of the training program is determined because the rate of accidents for employees who go through the training will not be known until after they have been employed for months or years. The criteria for determining the quality of the training must be something that can be controlled and measured by the project manager during the project.</p>
+        </div>
+        <p class="para editable block" id="fwk-38087-ch10_s03_s02_p07">Because projects are time sensitive, meeting activity finish dates is a common characteristic of quality work on a project that is not typical of a requirement of a process manager.</p>
+        <div class="callout editable block" id="fwk-38087-ch10_s03_s02_n03">
+            <h3 class="title">Timely Delivery Part of Quality</h3>
+            <p class="para" id="fwk-38087-ch10_s03_s02_p08">At a remote mining site in South America, the gasoline and diesel fuel must be brought in by truck over poorly maintained roads to run the trucks and heavy equipment used to set up an ore processing facility. The vendor for supplying fuel is required to provide fuel in the right grades for the various vehicles, in the appropriate quantities, and in a timely manner. If fuel of the right type and grade, with acceptable levels of impurities, is delivered a week after the vehicles have run out of fuel, the work on the fuel-delivery activity is of low quality.</p>
+        </div>
+        <div class="key_takeaways editable block" id="fwk-38087-ch10_s03_s02_n04">
+            <h3 class="title">Key Takeaways</h3>
+            <ul class="itemizedlist" id="fwk-38087-ch10_s03_s02_l01">
+                <li>Both project and process quality management require commitment from all employees, including top management. They are both client oriented and prevention oriented.</li>
+                <li>Projects are temporary and allow fewer opportunities to improve repetitive processes. Cost of prevention is often part of the project budget, but the cost of failure usually happens after the project is completed. This separation of costs and benefits can lead to taking short-term savings on the project at the expense of higher cost of failure after the project is complete.</li>
+            </ul>
+        </div>
+        <div class="exercises editable block" id="fwk-38087-ch10_s03_s02_n05">
+            <h3 class="title">Exercises</h3>
+            <ol class="orderedlist" id="fwk-38087-ch10_s03_s02_l02">
+                <li>How is quality control of a project different from quality control of a manufacturing process?</li>
+            </ol>
+            <p class="simpara">Cost of Failure after the Project</p>
+            <p class="para" id="fwk-38087-ch10_s03_s02_p09">Consider a project you have been involved in, in which the cost of prevention would be part of the project budget but the cost of failure would be incurred after the project was completed. Describe why you think top management would have to be involved to make the best decision for the company.</p>
+        </div>
+    </div>
+</div>
+<div class="section" id="fwk-38087-ch10_s04" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">10.4</span> Planning and Controlling Project Quality</h2>
+    <div class="learning_objectives editable block" id="fwk-38087-ch10_s04_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="fwk-38087-ch10_s04_l01">
+            <li>Define statistical measurement terminology.</li>
+            <li>Identify sources of information for the planning process.</li>
+            <li>Identify and describe the techniques for controlling project quality.</li>
+            <li>Describe the results of planning and controlling quality.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="fwk-38087-ch10_s04_p01">High quality is achieved by planning for it rather than by reacting to problems after they are identified. Standards are chosen and processes are put in place to achieve those standards.</p>
+    <div class="section" id="fwk-38087-ch10_s04_s01">
+        <h2 class="title editable block">Measurement Terminology</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s04_s01_p01">During the execution phase of the project, services and products are sampled and measured to determine if the quality is within control limits for the requirements and to analyze causes for variations. This evaluation is often done by a separate quality control group, and knowledge of a few process measurement terms is necessary to understand their reports. Several of these terms are similar, and it is valuable to know the distinction between them.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s04_s01_p02">The quality plan specifies the control limits of the product or process; the size of the range between those limits is the <span class="margin_term"><a class="glossterm">tolerance</a><span class="glossdef">Variation allowed on either side of the mean, often shown with the ± symbol to mean plus or minus.</span></span>. Tolerances are often written as the mean value, plus or minus the tolerance. The plus and minus signs are written together, ±.</p>
+        <div class="callout editable block" id="fwk-38087-ch10_s04_s01_n01">
+            <h3 class="title">Tolerance in Gasoline Production</h3>
+            <p class="para" id="fwk-38087-ch10_s04_s01_p03">The petroleum refinery chose to set its control limits for 87 octane gasoline at 86 and 88 octane. The tolerance is 87 ± 1.</p>
+        </div>
+        <p class="para editable block" id="fwk-38087-ch10_s04_s01_p04">Tools are selected that can measure the samples closely enough to determine if the measurements are within control limits and if they are showing a trend. Each measurement tool has its own tolerances. For example, if a machine is making rods whose diameters should be 10 mm ± 0.01 mm, you need a measuring device that can accommodate a rod that is 10 mm wide but can measure that width to a much smaller tolerance than 0.01 mm, such as 0.001 mm.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s04_s01_p05">The choice of tolerance directly affects the cost of quality (COQ). In general, it costs more to produce and measure products that have small tolerances. The costs associated with making products with small tolerances for variation can be very high and not proportional to the gains. For example, it might double the manufacturing cost to improve a process from a 4 σ to a 5 σ (lower tolerances from 25 percent of control limits to 20 percent), which might only reduce the number of parts that are out of control from 4 per 100,000 to 6 per 10 million (see <a class="xref" href="fwk-38087-ch10_s01#fwk-38087-ch10_s01_s02_f04">Figure 10.4 "Meaning of Sigma Levels"</a>). The cost of failure of only 4 parts per 100,000 might be much less than the cost of prevention.</p>
+    </div>
+    <div class="section" id="fwk-38087-ch10_s04_s02">
+        <h2 class="title editable block">Defining and Meeting Client Expectations</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s04_s02_p01">Clients provide specifications for the project that must be met for the project to be successful. Meeting project specifications is one definition of a project success. Clients often have expectations that are more difficult to capture in a written specification. For example, one client will want to be invited to every meeting of the project and will then select the ones that seem most relevant. Another client will want to only be invited to project meetings that need client input. Inviting this client to every meeting will cause unnecessary frustration. Listening to the client and developing an understanding of the expectations that are not easily captured in specifications is important to meeting the client’s expectations.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s04_s02_p02">Project surveys that capture how the client perceives the project performance provide the project team with data that is useful in meeting client expectation. If the results of the surveys indicate that the client is not pleased with some aspect of the project, the project team has the opportunity to explore the reasons for this perception with the client and develop recovery plans. The survey can also help define what is going well and what needs improved.</p>
+    </div>
+    <div class="section" id="fwk-38087-ch10_s04_s03">
+        <h2 class="title editable block">Sources of Planning Information</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s04_s03_p01">Planning for quality is part of the initial planning process. The early scope, budget, and schedule estimates are used to identify processes, services, or products where the expected grade and quality should be specified. Risk analysis is used to determine which of the risks the project faces could affect quality.</p>
+    </div>
+    <div class="section" id="fwk-38087-ch10_s04_s04">
+        <h2 class="title editable block">Techniques</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s04_s04_p01">Several different tools and techniques are available for planning and controlling the quality of a project. The extent to which these tools are used is determined by the project complexity and the quality management program in use by the client.</p>
+        <div class="section" id="fwk-38087-ch10_s04_s04_s01">
+            <h2 class="title editable block">Quality Management Methodology</h2>
+            <p class="para editable block" id="fwk-38087-ch10_s04_s04_s01_p01">The quality management methodology required by the client is used. The project manager must provide the documentation the client needs to prove compliance with their methodology. There are several different quality management methodologies, but they usually have characteristics that are similar to the ones described previously in the text.</p>
+        </div>
+        <div class="section" id="fwk-38087-ch10_s04_s04_s02">
+            <h2 class="title editable block">Flowcharting</h2>
+            <p class="para editable block" id="fwk-38087-ch10_s04_s04_s02_p01">Many processes are more complicated than a simple sequence of related events that include several different paths. A <span class="margin_term"><a class="glossterm">flowchart</a><span class="glossdef">Diagram of processes that have branches and loops based on decisions.</span></span> uses standard symbols to diagram a process that has branches or loops. Diamonds indicate decisions, and arrows indicate the direction of the flow of the process, as shown in <a class="xref" href="#fwk-38087-ch10_s04_s04_s02_f01">Figure 10.8 "Flowchart of a Quality Control Process"</a>.</p>
+            <div class="figure large editable block" id="fwk-38087-ch10_s04_s04_s02_f01">
+                <p class="title"><span class="title-prefix">Figure 10.8</span> Flowchart of a Quality Control Process</p>
+                <img src="section_12/1f7cb59b6354837c8169491ad90a423b.jpg">
+            </div>
+            <p class="para editable block" id="fwk-38087-ch10_s04_s04_s02_p02">The process used to plan and assess quality can be described using flowcharts. They are useful for communicating processes that have logical branches that can be determined by simple yes or no questions. Flowcharting is also useful for discovering misunderstanding in project roles and responsibilities and communicating responsibility for work processes.</p>
+        </div>
+        <div class="section" id="fwk-38087-ch10_s04_s04_s03">
+            <h2 class="title editable block">Benchmarking</h2>
+            <p class="para editable block" id="fwk-38087-ch10_s04_s04_s03_p01">When products like shoes were made by hand, artisans would seek some degree of standardization by marking standard lengths for different parts of the product on their workbench. In modern management practice, if a particular method or product is a standard of quality, comparing your organization’s quality plan to it is called <span class="margin_term"><a class="glossterm">benchmarking</a><span class="glossdef">Comparison of practices to standards or best practices in the same industry.</span></span>. If a product or service is similar to something that is done in another industry or by a competitor, the project planners can look at the best practices that are used by others and use them as a comparison.</p>
+        </div>
+        <div class="section" id="fwk-38087-ch10_s04_s04_s04">
+            <h2 class="title editable block">Cost-to-Benefit Analysis</h2>
+            <p class="para editable block" id="fwk-38087-ch10_s04_s04_s04_p01">Because the cost of prevention is more often part of the project budget, the case must be made for increasing the project budget to raise quality. Some quality management programs, like Six Sigma, require that expenditures for quality are justified using a cost-to-benefit analysis that is similar to calculating the cost of quality, except that it is a ratio of cost of increasing quality to the resulting benefit. A cost-benefit analysis in some quality programs can take into account nonfinancial factors such as client loyalty and improvements to corporate image and the cost-to-benefit analysis takes the form of a written analysis rather than a simple numeric ratio. It is similar to determining the cost of quality (COQ).</p>
+        </div>
+        <div class="section" id="fwk-38087-ch10_s04_s04_s05">
+            <h2 class="title editable block">Design of Experiments</h2>
+            <p class="para editable block" id="fwk-38087-ch10_s04_s04_s05_p01">Measuring for quality of manufactured products or use of repetitive processes requires taking samples. Specialists in quality control design a test regimen that complies with statistical requirements to be sure that enough samples are taken to be reasonably confident that the analysis is reliable. In project management, the testing experiments are designed as part of the planning phase and then used to collect data during the execution phase.</p>
+        </div>
+        <div class="section" id="fwk-38087-ch10_s04_s04_s06">
+            <h2 class="title editable block">Control Charts</h2>
+            <p class="para editable block" id="fwk-38087-ch10_s04_s04_s06_p01">If some of the functions of a project are repetitive, statistical process controls can be used to identify trends and keep the processes within control limits. Part of the planning for controlling the quality of repetitive processes is to determine what the control limits are and how the process will be sampled.</p>
+        </div>
+        <div class="section" id="fwk-38087-ch10_s04_s04_s07">
+            <h2 class="title editable block">Cause and Effect Diagrams</h2>
+            <p class="para editable block" id="fwk-38087-ch10_s04_s04_s07_p01">When control charts indicate an assignable cause for a variation, it is not always easy to identify the cause of a problem. Discussions that are intended to discover the cause can be facilitated using a cause-and-effect or <span class="margin_term"><a class="glossterm">fishbone diagram</a><span class="glossdef">Graphic representation of the contributing causes of a quality problem.</span></span> where participants are encouraged to identify possible causes of a defect.</p>
+            <div class="callout block" id="fwk-38087-ch10_s04_s04_s07_n01">
+                <h3 class="title">Diagramming Quality Problems</h3>
+                <p class="para" id="fwk-38087-ch10_s04_s04_s07_p02">For example, a small manufacturing firm tries to identify the assignable causes to variations in its manufacturing line. They assemble a team that identifies six possibilities, as shown in the fishbone diagram below.</p>
+                <div class="figure large" id="fwk-38087-ch10_s04_s04_s07_f01">
+                    <p class="title"><span class="title-prefix">Figure 10.9</span> Cause and Effect Diagram</p>
+                    <img src="section_12/75fb98527b2d6c3a43ecb15f421187cf.jpg">
+                    <p class="para">Each branch of the diagram can be expanded to break down a category into more specific items.</p>
+                </div>
+                <p class="para" id="fwk-38087-ch10_s04_s04_s07_p03">An engineer and the electrician work on one of the branches to consider possible causes of power fluctuation and add detail to their part of the fishbone diagram, as shown below.</p>
+                <div class="figure large" id="fwk-38087-ch10_s04_s04_s07_f02">
+                    <p class="title"><span class="title-prefix">Figure 10.10</span> Possible Causes of Power Fluctuation</p>
+                    <img src="section_12/b0b4b3dde36490ba3d7d0d4ac3aec56f.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="section" id="fwk-38087-ch10_s04_s04_s08">
+            <h2 class="title editable block">Check Sheets, Histograms, and Pareto Charts</h2>
+            <p class="para editable block" id="fwk-38087-ch10_s04_s04_s08_p01">When several quality problems need to be solved, a project manager must choose which ones to address first. One way to prioritize quality problems is to determine which ones occur most frequently. This data can be collected using a <span class="margin_term"><a class="glossterm">check sheet</a><span class="glossdef">Form for recording the frequency of quality problems.</span></span>, which is a basic form on which the user can make a check in the appropriate box each time a problem occurs or by automating the data collection process using the appropriate technology. Once the data are collected, they can be analyzed by creating a type of frequency distribution chart called a <span class="margin_term"><a class="glossterm">histogram</a><span class="glossdef">Column chart that displays frequency of occurrence on the vertical axis.</span></span>. A true histogram is a column chart where the width of the columns fill the available space on the horizontal axis and are proportional to the category values displayed on the <em class="emphasis">x</em> axis, while the height of the columns is proportional to the frequency of occurrences. Most histograms use one width of column to represent a category, while the vertical axis represents the frequency of occurrence.</p>
+            <div class="callout block" id="fwk-38087-ch10_s04_s04_s08_n01">
+                <h3 class="title">Charting Electrical Problems</h3>
+                <p class="para" id="fwk-38087-ch10_s04_s04_s08_p02">The engineer and electrician place a recording meter on the electrical supply to the manufacturing area and instruct the building automation system to keep a log of voltage coming into the plant from the local utility and when it starts and stops large electrical fan motors. They create a check sheet to track the number of times that power dips or spikes due to lighting strikes or electric space heater malfunctions. They collect the data, count the number of occurrences in each category, and then chart the number of occurrences in a histogram, as shown below.</p>
+                <div class="figure large" id="fwk-38087-ch10_s04_s04_s08_f01">
+                    <p class="title"><span class="title-prefix">Figure 10.11</span> Histogram Showing Frequency of Power Problems by Likely Cause</p>
+                    <img src="section_12/014c75e49cc88e8b74be1d53d3691795.jpg">
+                </div>
+            </div>
+            <p class="para editable block" id="fwk-38087-ch10_s04_s04_s08_p03">A variation on the histogram is a frequency distribution chart invented by economist Vilfredo Pareto known as a <span class="margin_term"><a class="glossterm">Pareto chart</a><span class="glossdef">Column chart that shows frequency on the vertical axis sorted from largest to smallest with a line that shows the cumulative total.</span></span>, in which the columns are arranged in decreasing order with the most common on the left and a line added that shows the cumulative total. The combination of columns and a line allows the user to tell at a glance which problems are most frequent and what fraction of the total they represent.</p>
+            <div class="callout block" id="fwk-38087-ch10_s04_s04_s08_n02">
+                <h3 class="title">Using Pareto Chart to Analyze Voltage Problem</h3>
+                <p class="para" id="fwk-38087-ch10_s04_s04_s08_p04">The engineer creates a Pareto chart by sorting the data and adds a line to show total problems, as shown below. He concludes that about half of the electrical voltage problems are caused when one of the large electrical fan motors on the same circuit as the manufacturing line is shut down to conserve electricity by the energy management system and then restarted.</p>
+                <div class="figure large" id="fwk-38087-ch10_s04_s04_s08_f02">
+                    <p class="title"><span class="title-prefix">Figure 10.12</span> Pareto Chart with Problems in Decreasing Order and a Line Showing a Cumulative Total</p>
+                    <img src="section_12/3811ca599e0b47b1c03b5048bd3c046d.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="fwk-38087-ch10_s04_s05">
+        <h2 class="title editable block">Planning and Control Results</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s04_s05_p01">The quality plan is produced during the initiation phase. The methods, procedures, and logic are described to demonstrate a commitment to a project of high quality. The plan identifies the products or services that will be measured and how they will be measured and compared to benchmarks. A flowchart demonstrates the logic and pathways to improve the plan.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s04_s05_p02">During the execution phase, data are collected by measuring samples according to the design specified in the plan. The data are charted and analyzed. If variations are due to assignable causes, change requests are created.</p>
+        <div class="key_takeaways editable block" id="fwk-38087-ch10_s04_s05_n01">
+            <h3 class="title">Key Takeaways</h3>
+            <ul class="itemizedlist" id="fwk-38087-ch10_s04_s05_l01">
+                <li>Statistical control terms that are commonly used are tolerance (the range between control limits), flowchart (a diagram showing decision branches and loops), benchmarking (comparison to best practices), fishbone diagram (shows possible causes of quality problems), check sheet (form used to record frequency of problem occurrences), histogram (column chart that shows frequency of problems), and Pareto chart (histogram sorted by frequency from highest to smallest with a line that shows total cumulative problems).</li>
+                <li>The quality planning process uses initial scope, budget, and schedule estimates to identify areas that need quality management.</li>
+                <li>Control of quality in repetitive processes use statistical control methods that involve designing testing while considering the cost of quality, taking measurements, and then analyzing the data using run charts that show control limits and trends. Methodologies are compared to the best practices by competitors, which is called benchmarking. Errors are documented using check sheets and analyzed using fishbone diagrams, histograms, or Pareto charts.</li>
+                <li>The products of planning and controlling quality are a quality management plan, data, analysis documents, and proposals for improvement</li>
+            </ul>
+        </div>
+        <div class="exercises editable block" id="fwk-38087-ch10_s04_s05_n02">
+            <h3 class="title">Exercises</h3>
+            <ol class="orderedlist" id="fwk-38087-ch10_s04_s05_l02">
+                <li>The range from the mean to either control limit is the __________.</li>
+                <li>A diagram that shows branches and loops based on decisions is a ____ _____. (two words)</li>
+                <li>The best practices in an industry to which a company can compare its practices are called ___________.</li>
+                <li>What is the difference between a histogram and a Pareto chart?</li>
+            </ol>
+            <p class="simpara">Quality Management Plan</p>
+            <p class="para" id="fwk-38087-ch10_s04_s05_p03">Consider a project in which you have been involved where there was a quality management plan or where such a plan was missing. Describe the effect of having or not having such a plan.</p>
+        </div>
+    </div>
+</div>
+<div class="section" id="fwk-38087-ch10_s05" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">10.5</span> Assuring Quality</h2>
+    <div class="learning_objectives editable block" id="fwk-38087-ch10_s05_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="fwk-38087-ch10_s05_l01">
+            <li>Describe the purpose and methods of quality assurance.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="fwk-38087-ch10_s05_p01">The purpose of quality assurance is to create confidence that the quality plan and controls are working properly. To assure quality, time must be allocated to review the original quality plan and compare that plan to how quality is being created during the execution of the project.</p>
+    <div class="section" id="fwk-38087-ch10_s05_s01">
+        <h2 class="title editable block">Process Analysis</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s05_s01_p01">The flowcharts of quality processes are compared to the processes followed during actual operations. If the plan was not followed, the process is analyzed and corrective action taken. The corrective action could be to educate the people involved on how to follow the quality plan or to revise the plan.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s05_s01_p02">The experiments that sample products and processes and collect data are examined to see if they are following statistically valid sampling techniques and that the measurement methods have small enough tolerances to detect variation within control limits.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s05_s01_p03">Because projects are temporary, there are fewer opportunities to learn and improve within one project if it has a short duration, but even in short projects, the quality manager should have a way to learn from experience and change the process for the next project of a similar complexity profile.</p>
+        <div class="callout editable block" id="fwk-38087-ch10_s05_s01_n01">
+            <h3 class="title">Analyzing Quality Processes in Safety Training</h3>
+            <p class="para" id="fwk-38087-ch10_s05_s01_p04">The technical college responsible for training employees in safe plant practices evaluates its instructor selection process at the end of the training to see if it had the best criteria for selection. For example, it required the instructors to have Masters degrees in manufacturing to qualify as college instructors. The college used an exit survey of the students to ask what they thought would improve the instruction of future classes on this topic. Some students felt that it would be more important to require that the instructors have more years of training experience, while others recommended that the college seek certification as a training center by the Occupational Safety and Health Administration (OSHA).<span class="footnote" id="fwk-38087-fn10_015">Occupational Safety and Health Administration, <em class="emphasis">OSHA Training Institute Education Center Fact Sheet</em>, July 3, 2007, <a class="link" href="http://www.osha.gov/dte/oti/index.html"> http://www.osha.gov/dte/oti/index.html</a> (accessed August 7, 2009).</span> The college considered these suggestions and decided to retain its requirement of a Masters degree but add a requirement that the instructor be certified by OSHA in plant safety.</p>
+        </div>
+    </div>
+    <div class="section" id="fwk-38087-ch10_s05_s02">
+        <h2 class="title editable block">Quality Audit</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s05_s02_p01">For additional confidence and assurance, an outside group can come in and review the quality procedures and accuracy of the data. This process is similar to a financial audit and is called a <span class="margin_term"><a class="glossterm">quality audit</a><span class="glossdef">Review of the quality plan, procedures, data collection, and analysis by an outside group.</span></span>. The purpose of a quality audit is to compare the stated quality goals of the project against the actual practice and procedures that are used. It is not a certification of the quality of the products themselves.</p>
+        <div class="key_takeaways editable block" id="fwk-38087-ch10_s05_s02_n01">
+            <h3 class="title">Key Takeaway</h3>
+            <ul class="itemizedlist" id="fwk-38087-ch10_s05_s02_l01">
+                <li>The purpose of quality assurance is to build confidence in the client that quality standards and procedures are being followed. This is done by an internal review of the plan, testing, and revisions policies or by an audit of the same items performed by an external group or agency.</li>
+            </ul>
+        </div>
+        <div class="exercises editable block" id="fwk-38087-ch10_s05_s02_n02">
+            <h3 class="title">Exercises</h3>
+            <ol class="orderedlist" id="fwk-38087-ch10_s05_s02_l02">
+                <li>How is a quality audit different from a quality plan?</li>
+            </ol>
+            <p class="simpara">Customer Confidence</p>
+            <p class="para" id="fwk-38087-ch10_s05_s02_p02">Consider a product that has suffered from a failure in its quality. Describe how the company handled the problem and its effect on your personal perception of the company and your confidence in buying its products.</p>
+        </div>
+    </div>
+</div>
+<div class="section end-of-chapter" id="fwk-38087-ch10_s06" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">10.6</span> Exercises</h2>
+    <p class="para editable block" id="fwk-38087-ch10_s06_p01">Exercises at the end of the chapter are designed to strengthen your understanding and retention of the information recently acquired in the chapter.</p>
+    <div class="exercises editable block" id="fwk-38087-ch10_s06_n01">
+        <h3 class="title">Essay Questions</h3>
+        <p class="para" id="fwk-38087-ch10_s06_p02">Write several paragraphs to provide more in-depth analysis and consideration when answering the following questions.</p>
+        <ol class="orderedlist" id="fwk-38087-ch10_s06_l01">
+            <li>Describe the difference between chance cause and assignable cause. How do these terms relate to Deming’s system of profound knowledge?</li>
+            <li>According to the text, why did the quality of manufactured goods decline in the United States after World War II, and how did Japan take advantage of that situation?</li>
+            <li>Describe the four Japanese terms used in TQM and give an example of how they might apply to a particular product.</li>
+        </ol>
+    </div>
+    <div class="exercises editable block" id="fwk-38087-ch10_s06_n02">
+        <h3 class="title">Discussion</h3>
+        <p class="para" id="fwk-38087-ch10_s06_p03">The exercises in this section are designed to promote exchange of information among students in the classroom or in an online discussion. The exercises are more open ended, which means that what you find might be completely different from what your classmates find, and you can all benefit by sharing what you have learned.</p>
+        <ol class="orderedlist" id="fwk-38087-ch10_s06_l02">
+            <li>The auto industry has been a highly visible battleground for international competition in which quality and the public’s perception of a company’s quality have played an important role. Deming stresses that management is 85 percent of the problem and the solution to a company’s quality. What are specific examples with which you are familiar from the news or personal experience that demonstrate management leadership (or lack of leadership) toward improving quality.</li>
+            <li>Consider how the four Japanese concepts of quality included in TQM are applied in your educational institution. Based on your experience with the management of your school, does the management use the principles of <em class="emphasis">kaizen</em>, <em class="emphasis">atarimae hinshitsu</em>, <em class="emphasis">kansei</em>, and <em class="emphasis">miryokuteki hinshitsu</em>? Provide an example (or counter example) of each.</li>
+        </ol>
+    </div>
+</div>
+<div class="section" id="fwk-38087-ch10_s07" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">10.7</span> Software and Technology Exercises</h2>
+    <div class="learning_objectives editable block" id="fwk-38087-ch10_s07_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="fwk-38087-ch10_s07_l01">
+            <li>Predict likely range of values in a normal distribution.</li>
+            <li>Recognize assignable and unassignable causes of statistical variation.</li>
+        </ol>
+    </div>
+    <div class="section" id="fwk-38087-ch10_s07_s01">
+        <h2 class="title editable block">Predicting Value Ranges Using Standard Deviation</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s07_s01_p01">Real production processes are never perfect. In some cases, a few products that are too small or that do not work will just cause inconvenience, but in other cases they might be life threatening. Samples of the production process will show how much variation occurs. If it appears that the variations are distributed equally above and below the mean (average), it might be assumed that the statistics of a normal distribution can be used to predict the percentage of products that will be defective when many of them are produced even if none of the samples are defective.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s07_s01_p02">Some projects are initiated to increase the quality by reducing the variation in production. To understand the language of statistics and how it is used to justify a project, it is useful to gain a “feel” for how the distribution of samples is described by the standard deviation. A spreadsheet can be used to simulate samples of production runs where the mean and standard deviation can be chosen to show their relationship in a normal distribution. By trying different values for the standard deviation and observing the effect on the distribution of estimated samples in a chart, you can develop a sense of how the two are related.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s07_s01_p03">Recall that a standard deviation is called a sigma and represented by the Greek letter <em class="emphasis">σ</em> and the 68-95-99.7 rule refers to the percentage of samples that will be within one, two, and three standard deviations of the mean.</p>
+        <div class="section" id="fwk-38087-ch10_s07_s01_s01">
+            <h2 class="title editable block">Examine a Normal Distribution</h2>
+            <p class="para editable block" id="fwk-38087-ch10_s07_s01_s01_p01">Complete the exercise by following these instructions:</p>
+            <ol class="orderedlist block" id="fwk-38087-ch10_s07_s01_s01_l01">
+                <li>Navigate to the directory location where the exercise files for this unit are located and open <a class="link" href="http://www.gone.2012books.lardbucket.org/sites/all/files/Ch10STD.xls"><em class="emphasis">Ch10STD.xls</em></a> in a spreadsheet program such as MS Excel.</li>
+                <li>In cell A2, replace <em class="emphasis">StudentName</em> with your name.</li>
+                <li>This worksheet is designed to simulate a set of sample values that vary from the mean for random reasons and form a normal distribution. The data and calculations in columns A through F are hidden. They are used to calculate the values in column G on which the chart is based.</li>
+                <li>
+                    <p class="para">Notice the following features of the spreadsheet:</p>
+                    <ul class="itemizedlist" id="fwk-38087-ch10_s07_s01_s01_l02">
+                        <li>Column A has bins. In this example, the bins are .1 units wide. The size of the bin and the horizontal scale of the chart are determined by the value in cell L5.</li>
+                        <li>This simulation uses forty-two bins that are distributed equally above and below the mean. The mean value can be specified in cell L4.</li>
+                        <li>The usual method is to sample a sequence of products, count the number that fall into each bin, and then calculate the standard deviation. In this simulation, you can specify the standard deviation in cell L3, and the percentage of samples that are likely to occur in each bin is calculated and displayed in column G. The display is rounded to a whole percent. The display of decimal places can be increased using the spreadsheet’s controls.</li>
+                        <li>The percentage of estimated samples that occur in each bin is charted using a column chart. The scale at the left side of the chart indicates the percent of the samples in each bin.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="para">Compare the chart in the spreadsheet to the chart in <a class="xref" href="#fwk-38087-ch10_s07_s01_s01_f01">Figure 10.13 "Normal Distribution of Gasoline Samples"</a> that was used in the text. Observe that the standard deviation, <em class="emphasis">σ</em>, is .2 and that almost all the sample values occur between 86.4 and 87.6—three <em class="emphasis">σ</em> on either side of the mean.</p>
+
+                </li>
+                <li>Open a word processing document and then save it as <em class="emphasis">Ch10STDStudentName.doc</em>. Switch back to the spreadsheet and capture the screen. Switch to the word processing document and paste the screen into the document.</li>
+                <li>
+                    <p class="para">Switch back to the spreadsheet. To see the effect of a better production process that would have a <em class="emphasis">σ</em> of .1 instead of .2, click cell L3. Type <em class="emphasis">.1</em> and then, on the Formula bar, click the Enter button. The distribution narrows so that almost all the estimated samples are within .3 on either side of the mean (87.0), as shown in <a class="xref" href="#fwk-38087-ch10_s07_s01_s01_f02">Figure 10.14 "Normal Distribution with Smaller Standard Deviation"</a>.</p>
+
+                </li>
+                <li>Capture the screen showing in the narrow distribution and paste it into the word processing document.</li>
+                <li>
+                    <p class="para">In the spreadsheet, in cell L3, type <em class="emphasis">.4</em> and then, on the Formula bar, click the Enter button. Notice that a larger standard deviation means the distribution is more spread out. Three standard deviations is 1.2 (3 × .4), so almost all the samples will be within 1.2 on either side of the mean, as shown in <a class="xref" href="#fwk-38087-ch10_s07_s01_s01_f03">Figure 10.15 "Normal Distribution with Larger Standard Deviation"</a>.</p>
+
+                </li>
+                <li>Capture this screen and paste it into the word processing document.</li>
+                <li>Change the value in cell L3 to <em class="emphasis">1</em>. Almost all the samples will be above 84 (87−3) and below 90 (87+3), but the horizontal scale is too small to show all the values.</li>
+                <li>Change the value in cell L5 to <em class="emphasis">.3</em>.</li>
+                <li>Capture the screen and paste it into the word processing document.</li>
+            </ol>
+        </div>
+        <div class="section" id="fwk-38087-ch10_s07_s01_s02">
+            <h2 class="title editable block">Use the Spreadsheet for a Different Example</h2>
+            <p class="para editable block" id="fwk-38087-ch10_s07_s01_s02_p01">The effects of a lower-than-expected octane rating in a passenger car might be engine knock during acceleration and less power climbing a hill, but the effect of lower-than-expected octane fuel in a military aircraft might mean that the plane could not achieve the desired altitude or speed in a critical situation. Aviation gasoline is designed for use in high-performance engines that require 100 octane fuel. Use the spreadsheet to examine the estimated distribution of gasoline samples with a different mean and <em class="emphasis">σ</em>.</p>
+        </div>
+        <div class="section" id="fwk-38087-ch10_s07_s01_s03">
+            <h2 class="title editable block">Examine a Normal Distribution</h2>
+            <p class="para editable block" id="fwk-38087-ch10_s07_s01_s03_p01">Complete the exercise by following these instructions:</p>
+            <ol class="orderedlist block" id="fwk-38087-ch10_s07_s01_s03_l01">
+                <li>Change the value in cell L4 to <em class="emphasis">100</em> and the standard deviation in cell L3 to <em class="emphasis">.1</em>. Notice that a standard deviation of .1 means that 99.7 percent of the gasoline samples will be between 99.7 and 100.3 octane.</li>
+                <li>Practice changing the mean and standard deviation values in the spreadsheet. Each time you do so, predict the high and low values that represent three <em class="emphasis">σ</em> above and below the mean and use the spreadsheet to check your prediction. If the values extend beyond the sides of the chart, increase the increment value in cell L5.</li>
+                <li>Capture the screen that shows one of your estimates that is different from the examples shown in the previous steps and paste it into the word processing document.</li>
+                <li>In the word processing document, below the last screen, write between one hundred and two hundred words to describe what you learned about the relationship between the standard deviation and the distribution of likely values. Specifically describe how you predict the upper and lower limits of the range.</li>
+                <li>Close the spreadsheet. Do not save the changes.</li>
+                <li>Save the word processing document as <em class="emphasis">Ch10STDStudentName.doc</em>.</li>
+                <li>
+                    <p class="para">Review your work and use the following rubric to determine its adequacy:</p>
+                    <div class="informaltable" id="fwk-38087-ch10_s07_s01_s03_tx01" frame="all">
+                        <table cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Element</th>
+                                    <th>Best</th>
+                                    <th>Adequate</th>
+                                    <th>Poor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>File name</td>
+                                    <td>Ch10STDStudentName.doc</td>
+                                    <td>Same or .docx file format</td>
+                                    <td>Student name missing</td>
+                                </tr>
+                                <tr>
+                                    <td>Predict likely range of values in a normal distribution</td>
+                                    <td>Five screen captures plus a reflective essay on what you learned about predicting the upper and lower limits defined by 3 <em class="emphasis">σ</em>
+</td>
+                                    <td>Same as Best</td>
+                                    <td>Missing pictures; essay does not describe how the upper and lower limits of 3 <em class="emphasis">σ are calculated</em>
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                <li>Revise the document, if necessary. Save the document and submit it as directed by the instructor.</li>
+            </ol>
+        </div>
+    </div>
+    <div class="section" id="fwk-38087-ch10_s07_s02">
+        <h2 class="title editable block">Recognizing Variations Due to Unassignable and Assignable Causes</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s07_s02_p01">W. Edwards Deming teaches that some variation is inevitable due to chance cause. A manager needs to recognize the difference between variations that are due to chance and those that indicate the presence of an assignable cause or a trend. If it appears that there is an assignable cause for variation in quality, a project manager might be required to identify and fix the problem. To communicate with process managers who are monitoring and sampling production, it is useful to understand the use of control charts.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s07_s02_p02">A run chart is a type of chart that shows variations from the mean as a function of time. The value of each sample is plotted to show the day it was taken and how it differs from the mean. If the variation is random, there will be roughly the same number of points above and below the mean.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s07_s02_p03">A spreadsheet can be used to simulate random variations in production. In this exercise, the spreadsheet uses its random number function to pick two numbers that are positive and two that are negative and adds them to the mean. Each number represents a variation that is between the control limits. Most of the time the positive and negative numbers cancel each other out and result in a sum that is close to the mean, but occasionally the four random factors add up to values that are far from the mean.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s07_s02_p04">In this part of the exercise, you observe variations in a run chart and frequency distribution chart that are due to random effects. You generate the random numbers several times to see what production runs with random (unassignable) variations look like.</p>
+        <div class="section" id="fwk-38087-ch10_s07_s02_s01">
+            <h2 class="title editable block">Examine a Run Chart with Random Effects</h2>
+            <p class="para editable block" id="fwk-38087-ch10_s07_s02_s01_p01">Complete the exercise by following these instructions:</p>
+            <ol class="orderedlist block" id="fwk-38087-ch10_s07_s02_s01_l01">
+                <li>Navigate to the directory location where the exercise files for this unit are located and open <a class="link" href="http://www.gone.2012books.lardbucket.org/sites/all/files/Ch10ControlChart.xls"><em class="emphasis">Ch10ControlChart.xls</em></a> in a spreadsheet program such as MS Excel.</li>
+                <li>Observe that in cells B4 through B23 the RAND function is used to simulate the effects of four random influences on each day of production for a twenty-day period.</li>
+                <li>
+                    <p class="para">Scroll the screen or adjust the zoom so that you can see both charts. See <a class="xref" href="#fwk-38087-ch10_s07_s02_s01_f01">Figure 10.16 "Screen Adjusted to Show Both Charts"</a>.</p>
+
+                </li>
+                <li>On your keyboard, near the top, press the F9 key. The random functions pick new numbers. Observe how the samples on the run chart change and how the frequency distribution changes.</li>
+                <li>
+                    <p class="para">Press the F9 key several more times until you get a set of samples that are grouped close to the mean like the example shown in <a class="xref" href="#fwk-38087-ch10_s07_s02_s01_f02">Figure 10.17 "Most Samples near the Mean"</a>.</p>
+
+                </li>
+                <li>Open a word processing document and then save it as <em class="emphasis">Ch10RunChartStudentName.doc</em>. Switch back to the spreadsheet and capture the screen. Switch to the word processing document and paste the screen into the document. Your values will differ from those in the figure.</li>
+                <li>According to Deming, it is not productive to hold employees to quality standards that they do not control. Consider the effect on employee moral if this set of samples was taken as the standard by which the next run would be judged.</li>
+                <li>
+                    <p class="para">Press the F9 key again and stop at a set of samples that has a greater variation, such as the example shown in <a class="xref" href="#fwk-38087-ch10_s07_s01_s01_f03">Figure 10.15 "Normal Distribution with Larger Standard Deviation"</a>.</p>
+
+                </li>
+                <li>Capture this screen and paste it into <em class="emphasis">Ch10RunChartStudentName.doc</em>. Because of the chance-cause random factors, this set of data has more variation. If employee performance were punished or rewarded based on this data, they would become discouraged because they do not control the quality. Leave both files open.</li>
+            </ol>
+        </div>
+        <div class="section" id="fwk-38087-ch10_s07_s02_s02">
+            <h2 class="title editable block">Examine a Run Chart with Assignable Cause</h2>
+            <p class="para editable block" id="fwk-38087-ch10_s07_s02_s02_p01">Complete the exercise by following these instructions:</p>
+            <p class="para editable block" id="fwk-38087-ch10_s07_s02_s02_p02">An assignable cause can be mixed in with the chance-cause random effects. In this part, you introduce a factor that causes the samples to display a trend. You run the simulation several times to learn how to recognize a set of data that is a mix of random (chance-cause) factors and a trend that is probably from an assignable cause.</p>
+            <ol class="orderedlist block" id="fwk-38087-ch10_s07_s02_s02_l01">
+                <li>In the spreadsheet, click cell B2. Type <em class="emphasis">.03</em> and then, on the Formula bar, click the Enter button. The random functions are recalculated, but each value is increased by .03 over its predecessor.</li>
+                <li>
+                    <p class="para">Press the F9 key several times and observe how this trend appears within the samples such as the example in <a class="xref" href="#fwk-38087-ch10_s07_s02_s02_f01">Figure 10.19 "Trend That Is Probably Due to an Assignable Cause"</a>.</p>
+
+                </li>
+                <li>It is clear that action must be taken soon to prevent the next batch of samples from exceeding the control limit. The process manager might create a project to identify the assignable cause and take the necessary action, such as replacing a worn-out piece of equipment. Choose an example where the upward trend is most apparent. Capture the screen and paste it into the word processing document.</li>
+                <li>Close the spreadsheet without saving the changes.</li>
+                <li>In the word processing document, below the last picture, write a reflective essay of between one hundred and two hundred words that describes how you would recognize the difference between run charts that show assignable and unassignable causes. Discuss the effect on morale if one of the runs with random values that are close to the mean is chosen as the standard of performance by which workers would be measured.</li>
+                <li>Leave the word processing document open.</li>
+                <li>
+                    <p class="para">Review your work and use the following rubric to determine its adequacy:</p>
+                    <div class="informaltable" id="fwk-38087-ch10_s07_s02_s02_tx01" frame="all">
+                        <table cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Element</th>
+                                    <th>Best</th>
+                                    <th>Adequate</th>
+                                    <th>Poor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>File name</td>
+                                    <td>Ch10RunChartStudentName.doc</td>
+                                    <td>Ch10RunChartStudentName.docx</td>
+                                    <td>Did not include name in file name</td>
+                                </tr>
+                                <tr>
+                                    <td>Recognize assignable and unassignable causes of statistical variation</td>
+                                    <td>Three screen captures that show two random causes and one assignable cause; an essay that describes how to recognize the difference and the effect on worker morale if a run with low random variation is chosen as a standard</td>
+                                    <td>Same as Best</td>
+                                    <td>Missing screen; essay does not address both requirements</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                <li>Save the file and submit it as directed by the instructor.</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s11-estimating-and-managing-costs.html"><img src="shared/images/batch-left.png"></a> <a href="s11-estimating-and-managing-costs.html">Previous Chapter</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s13-managing-project-risk.html">Next Chapter</a> <a href="s13-managing-project-risk.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

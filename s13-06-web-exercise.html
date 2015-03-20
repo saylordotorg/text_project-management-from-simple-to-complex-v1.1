@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Web Exercise</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s13-05-exercises.html"><img src="shared/images/batch-left.png"></a> <a href="s13-05-exercises.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s14-01-identifying-the-need-for-resou.html">Next Section</a> <a href="s14-01-identifying-the-need-for-resou.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="fwk-38087-ch11_s06" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">11.6</span> Web Exercise</h2>
+    <div class="learning_objectives editable block" id="fwk-38087-ch11_s06_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="fwk-38087-ch11_s06_l01">
+            <li>Describe the benefits of estimating risk using a Monte Carlo simulation.</li>
+        </ol>
+    </div>
+    <div class="section" id="fwk-38087-ch11_s06_s01">
+        <h2 class="title editable block">Monte Carlo Risk Simulations</h2>
+        <p class="para editable block" id="fwk-38087-ch11_s06_s01_p01">Planning for risks is a form of betting on the future. An accomplished gambler knows the odds of drawing a certain combination of cards in a poker hand or of a ball landing on a number at a roulette wheel. If a project has several risk factors, they are not likely to all occur on the same project, but it is important to know the odds of that happening and to compare them to the potential profit of the project. If several risks do materialize on the same project, it might cause the company to lose money on the project, and senior management must decide if the benefit is worth the risk.</p>
+        <p class="para editable block" id="fwk-38087-ch11_s06_s01_p02">Computers can generate random numbers that can be used to simulate the likelihood of combinations of risk factors occurring and the impact on the project’s profitability. These simulations calculate odds like those a gambler would use before placing a bet, and the process is named after a famous gambling center in Europe.</p>
+        <p class="para editable block" id="fwk-38087-ch11_s06_s01_p03">To use a Monte Carlo simulation, you have to decide how the frequency of occurrences is distributed. Three types of distributions are most common: normal, skewed, and equal. If they are governed by the central limits principle, the occurrences will have a normal distribution.</p>
+        <div class="figure large editable block" id="fwk-38087-ch11_s06_s01_f01">
+            <p class="title"><span class="title-prefix">Figure 11.7</span> Normal Distribution</p>
+            <img src="section_13/c1ba77cb7b7db1ec1cfc9a2fed2f14b2.jpg">
+        </div>
+        <p class="para editable block" id="fwk-38087-ch11_s06_s01_p04">If the likely frequency of occurrences of a risk factor is more likely to be distributed to either side of the middle of the range, it is a skewed distribution.</p>
+        <div class="figure large editable block" id="fwk-38087-ch11_s06_s01_f02">
+            <p class="title"><span class="title-prefix">Figure 11.8</span> Skewed Distribution</p>
+            <img src="section_13/aaccf2a2f1b0f93016bba04a6c860a47.jpg">
+        </div>
+        <p class="para editable block" id="fwk-38087-ch11_s06_s01_p05">If the likelihood of occurrence is evenly distributed across the range where each possibility has the same odds of occurring, it is an equal distribution.</p>
+        <div class="figure large editable block" id="fwk-38087-ch11_s06_s01_f03">
+            <p class="title"><span class="title-prefix">Figure 11.9</span> Equal Distribution</p>
+            <img src="section_13/25c958e9f5c4df76b6795a7e4c3c591b.jpg">
+        </div>
+        <p class="para editable block" id="fwk-38087-ch11_s06_s01_p06">A computer can choose numbers for each risk factor that represent a possible outcome for that risk on the project according to its distribution. Those numbers are fed into a spreadsheet that determines the effect on the project and its costs. This process is repeated thousands of times, and the result of each iteration—repeated process—is stored in a table of possible outcomes. This table is summarized in a histogram that shows how many of the iterations produced profit (or loss) in each range (bin).</p>
+        <p class="para editable block" id="fwk-38087-ch11_s06_s01_p07">The outcome of a Monte Carlo simulation gives managers an idea of how much the project could make or lose and the odds of that happening. Monte Carlo simulations are often used to predict the likelihood of a new product making a profit or loss. The same methods can be applied to predicting the profit or loss on a project.</p>
+        <div class="section" id="fwk-38087-ch11_s06_s01_s01">
+            <h2 class="title editable block">Learn More about Monte Carlo Simulations</h2>
+            <p class="para editable block" id="fwk-38087-ch11_s06_s01_s01_p01">Complete the exercise by following these instructions:</p>
+            <ol class="orderedlist block" id="fwk-38087-ch11_s06_s01_s01_l01">
+                <li>Open a blank document in a word processing program and then save the document as <em class="emphasis">Ch11MonteCarloStudentName.doc</em>. Leave the document open.</li>
+                <li>Start a web browser and then to go to <em class="emphasis">A Practical Guide to Monte Carlo Simulations</em> at <a class="link" href="http://www.vertex42.com/ExcelArticles/mc/MonteCarloSimulation.html"><em class="emphasis">http://www.vertex42.com/ExcelArticles/mc/MonteCarloSimulation.html</em></a>.</li>
+                <li>Read the first screen to review the concepts.</li>
+                <li>
+                    <p class="para">Near the bottom of the first screen, click the arrow labeled <em class="emphasis">Sales Forecast Example</em>, as shown in <a class="xref" href="#fwk-38087-ch11_s06_s01_s01_f01">Figure 11.10 "Next Page Button"</a>.</p>
+                    <div class="figure medium" id="fwk-38087-ch11_s06_s01_s01_f01">
+                    <p class="title"><span class="title-prefix">Figure 11.10</span> Next Page Button</p>
+                        <img src="section_13/9327742b91ddbc7a4e83e597c32298d0.jpg">
+                    <div class="copyright">
+                        <p class="para">Source: Courtesy of <a class="link" href="http://www.vertex42.com">www.vertex42.com</a>.</p>
+                    </div>
+                    </div>
+                </li>
+                <li>Scroll down past the advertisements and begin reading at Step 1. Capture a screen that shows Step 1 and paste it into <em class="emphasis">Ch11MonteCarloStudentName.doc</em>.</li>
+                <li>Read the explanation of how to create a model.</li>
+                <li>Use the Next button at the bottom of the screen to go to step 2, Generating Random Inputs.</li>
+                <li>Read steps 2, 3, and 4 on this screen.</li>
+                <li>
+                    <p class="para">Continue reading and advancing screens until you get to the histogram as shown in <a class="xref" href="#fwk-38087-ch11_s06_s01_s01_f02">Figure 11.11 "Estimated Loss or Profit"</a>.</p>
+                    <div class="figure large" id="fwk-38087-ch11_s06_s01_s01_f02">
+                    <p class="title"><span class="title-prefix">Figure 11.11</span> Estimated Loss or Profit</p>
+                        <img src="section_13/45d43bce69d11971afd28424be2ef78c.jpg">
+                    <div class="copyright">
+                        <p class="para">Source: Adapted from Wittwer, J.W., "Creating a Histogram In Excel" from <a class="link" href="http://www.vertex42.com">www.vertex42.com</a>, June 1, 2004, http://vertex42.com/ExcelArticles/mc/Histogram.html.</p>
+                    </div>
+                    </div>
+                </li>
+                <li>The green line is the cumulative probability. The red lines are intended to help you find the 5 percent and 95 percent probability points on the green line.</li>
+                <li>Capture this screen and paste it into <em class="emphasis">Ch11MonteCarloStudentName.doc</em>.</li>
+                <li>Refer to <a class="xref" href="#fwk-38087-ch11_s06_s01_s01_f02">Figure 11.11 "Estimated Loss or Profit"</a>. Notice a spot on the green line is circled. According to the horizontal scale, this is the spot on the cumulative percentage line that marks the difference between negative and positive income for the project. In the word processing document, below the last screen capture, describe how you would use this chart to predict the percentage chance that this project will lose money. Leave the document open.</li>
+            </ol>
+        </div>
+        <div class="section" id="fwk-38087-ch11_s06_s01_s02">
+            <h2 class="title editable block">Learn about Using Dedicated Monte Carlo Simulation Software</h2>
+            <p class="para editable block" id="fwk-38087-ch11_s06_s01_s02_p01">Complete the exercise by following these instructions:</p>
+            <ol class="orderedlist editable block" id="fwk-38087-ch11_s06_s01_s02_l01">
+                <li>Use your web browser to go to <em class="emphasis">Monte Carlo Simulation Tutorial</em> at <a class="link" href="http://www.solver.com/simulation/monte-carlo-simulation/tutorial.htm"><em class="emphasis">http://www.solver.com/simulation/monte-carlo-simulation/tutorial.htm</em></a>.</li>
+                <li>
+                    <p class="para">Read each of the first seven screens. Capture screens where indicated in the following list and paste them into <em class="emphasis">Ch11MonteCarloStudentName.doc</em>:</p>
+                    <ul class="itemizedlist" id="fwk-38087-ch11_s06_s01_s02_l02">
+                        <li>Introduction (Capture the section titled <em class="emphasis">The Flawed Average Model</em>.)</li>
+                        <li>Introducing Uncertainty</li>
+                        <li>Introducing Uncertainty (cont.)</li>
+                        <li>Uncertain Functions and Statistics</li>
+                        <li>Using Interactive Simulation (Capture the table near the bottom.)</li>
+                        <li>Viewing the Full Range of Profit Outcomes</li>
+                        <li>Focusing on Profitable Outcomes (Capture the simulation results histogram at the bottom of the screen.)</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="para">The authors make the case that a simple average of the risks produces an estimate that is too high. If they run a thousand combinations of risk outcomes, they predict a lower profit and a certain likelihood of losing money. In the word processing document, below the last screen capture, review the screens and answer the following questions:</p>
+                    <ul class="itemizedlist" id="fwk-38087-ch11_s06_s01_s02_l03">
+                        <li>What does a simple average model predict for a net profit?</li>
+                        <li>What does the simulation predict is the “True Average” profit?</li>
+                        <li>If most of the risk factors occur, how much money could the project lose?</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <div class="section" id="fwk-38087-ch11_s06_s01_s03">
+            <h2 class="title editable block">Analysis</h2>
+            <ol class="orderedlist block" id="fwk-38087-ch11_s06_s01_s03_l01">
+                <li>At the bottom of <em class="emphasis">Ch11MonteCarloStudentName.doc</em>, write between one hundred and two hundred words to describe the benefits of estimating risk using a Monte Carlo simulation versus a simple average of the risks. Use specific references to the assigned reading in the text and in the web pages in the previous two parts of this exercise.</li>
+                <li>
+                    <p class="para">Review your work and use the following rubric to determine its adequacy:</p>
+                    <div class="informaltable" id="fwk-38087-ch11_s06_s01_s03_tx01" frame="all">
+                        <table cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Element</th>
+                                    <th>Best</th>
+                                    <th>Adequate</th>
+                                    <th>Poor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>File name</td>
+                                    <td>Ch11MonteCarloStudentName.doc</td>
+                                    <td>.docx version</td>
+                                    <td>Student name not included</td>
+                                </tr>
+                                <tr>
+                                    <td>Describe the benefits of estimating risk using a Monte Carlo simulation</td>
+                                    <td>Two screen captures plus a description of how the chart is used to estimate the percentage chance of losing money; three screen captures and answers to the three questions; description of the benefits of a Monte Carlo simulation</td>
+                                    <td>Same as Best</td>
+                                    <td>Missing screens; inaccurate estimates; incorrect answers to the three questions; description without specific references</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                <li>Save the file and submit it as directed by the instructor.</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s13-05-exercises.html"><img src="shared/images/batch-left.png"></a> <a href="s13-05-exercises.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s14-01-identifying-the-need-for-resou.html">Next Section</a> <a href="s14-01-identifying-the-need-for-resou.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

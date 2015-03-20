@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Quality and Statistics</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s11-04-software-and-technology-exerci.html"><img src="shared/images/batch-left.png"></a> <a href="s11-04-software-and-technology-exerci.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s12-02-development-of-quality-as-a-co.html">Next Section</a> <a href="s12-02-development-of-quality-as-a-co.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="fwk-38087-ch10_s01" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">10.1</span> Quality and Statistics</h2>
+    <div class="learning_objectives editable block" id="fwk-38087-ch10_s01_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="fwk-38087-ch10_s01_l01">
+            <li>Define quality.</li>
+            <li>Define and explain statistics terms used in quality control.</li>
+            <li>Estimate the likelihood of samples falling within one, two, or three standard deviations of the mean given a normal distribution caused by random factors.</li>
+        </ol>
+    </div>
+    <div class="section" id="fwk-38087-ch10_s01_s01">
+        <h2 class="title editable block">Definitions of Quality and Grade</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s01_s01_p01"><span class="margin_term"><a class="glossterm">Quality</a><span class="glossdef">Degree to which a set of inherent characteristics fulfill requirements.</span></span> is a relative term, which means that something is of high or low quality compared to what it is required to be. According to the International Organization for Standardization (ISO), quality is “the degree to which a set of inherent characteristics fulfill requirements.”<span class="footnote" id="fwk-38087-fn10_001">International Organization for Standardization, <em class="emphasis">Quality Management Systems—Fundamentals and Vocabulary</em> (Geneva: ISO Press, 2005), in Project Management Institute, Inc., <em class="emphasis">A Guide to the Project Management Body of Knowledge (PMBOK Guide)</em>, 4th ed. (Newtown Square, PA: Project Management Institute, Inc., 2008), 190.</span> The requirements of a product or process can be categorized or given a <span class="margin_term"><a class="glossterm">grade</a><span class="glossdef">Category of product or service requirements.</span></span>. The quality is determined by how well something meets the requirements of its grade. Consider the following examples.</p>
+        <div class="callout editable block" id="fwk-38087-ch10_s01_s01_n01">
+            <h3 class="title">Quality of Gasoline Grades</h3>
+            <p class="para" id="fwk-38087-ch10_s01_s01_p02">Petroleum refiners provide gasoline in several different grades based on the octane rating because higher octane ratings are suitable for higher compression engines. Gasoline must not be contaminated with dirt or water, and the actual performance of the fuel must be close to its octane rating. A shipment of low-grade gasoline graded as 87 octane that is free of water or other contaminants would be of high quality, while a shipment of high grade 93 octane gas that is contaminated with dirt would be of low quality.</p>
+        </div>
+        <div class="callout editable block" id="fwk-38087-ch10_s01_s01_n02">
+            <h3 class="title">Quality of Furniture Packing in John’s Move</h3>
+            <p class="para" id="fwk-38087-ch10_s01_s01_p03">John has antique furniture that is in excellent condition that was left to him by his grandmother. The pieces are important to John for sentimental reasons and they are also valuable. John decides to hire movers (high-grade professionals) to load his furniture into the truck using appropriate padding and restraints to prevent dents and scratches during the long trip to Atlanta and then to unload the truck in Atlanta. John’s standard for high quality is that no observable damage occurs to his large pieces of furniture, especially the antiques. If the furniture arrives in his new apartment without a single dent, scratch, or other damage, the activity will be of high quality.</p>
+            <p class="para" id="fwk-38087-ch10_s01_s01_p04">John’s standard for packing his kitchen is lower. His dishes are old and cheap, so he decides to trust his inexperienced friends (low-grade amateurs) to help him pack his kitchen. If a few of the dishes or glassware are chipped or broken in the process, the savings in labor cost will more than make up for the loss, and the dishes can be easily replaced. If John has a few chipped dishes and a broken glass or two by the time he is unpacked in Atlanta, he will consider the kitchen packing to be of high quality.</p>
+        </div>
+        <p class="para editable block" id="fwk-38087-ch10_s01_s01_p05">For most people, the term quality also implies good value—getting your money’s worth. For example, even low-grade products should still work as expected, be safe to use, and last a reasonable amount of time.</p>
+    </div>
+    <div class="section" id="fwk-38087-ch10_s01_s02">
+        <h2 class="title editable block">Statistics Terminology</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s01_s02_p01">Determining how well products meet grade requirements is done by taking measurements and then interpreting those measurements. <span class="margin_term"><a class="glossterm">Statistics</a><span class="glossdef">Mathematical interpretation of numerical data.</span></span>—the mathematical interpretation of numerical data—is useful when interpreting large numbers of measurements and is used to determine how well the product meets a specification when the same product is made repeatedly. Measurements made on samples of the product must be between <span class="margin_term"><a class="glossterm">control limits</a><span class="glossdef">Upper and lower extremes of allowable variation.</span></span>—the upper and lower extremes of allowable variation—and it is up to management to design a process that will consistently produce products between those limits.</p>
+        <div class="callout editable block" id="fwk-38087-ch10_s01_s02_n01">
+            <h3 class="title">Setting Control Limits in Gasoline Production</h3>
+            <p class="para" id="fwk-38087-ch10_s01_s02_p02">A petroleum refinery produces large quantities of fuel in several grades. Samples of the fuels are extracted and measured at regular intervals. If a fuel is supposed to have an 87 octane performance, samples of the fuel should produce test results that are close to that value. Many of the samples will have scores that are different from 87. The differences are due to random factors that are difficult or expensive to control. Most of the samples should be close to the 87 rating and none of them should be too far off. The manufacturer has grades of 85 and 89, so they decide that none of the samples of the 87 octane fuel should be less than 86 or higher than 88.</p>
+        </div>
+        <p class="para editable block" id="fwk-38087-ch10_s01_s02_p03">If a process is designed to produce a product of a certain size or other measured characteristic, it is impossible to control all the small factors that can cause the product to differ slightly from the desired measurement. Some of these factors will produce products that have measurements that are larger than desired and some will have the opposite effect. If several random factors are affecting the process, they tend to offset each other most of the time, and the most common results are near the middle of the range. This idea is called the <span class="margin_term"><a class="glossterm">central limit theorem</a><span class="glossdef">Idea that if variation is caused by several random factors, they will generally cancel each other out and most measurements will be near the middle of the range of variation.</span></span>.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s01_s02_p04">If the range of possible measurement values is divided equally into subdivisions called <span class="margin_term"><a class="glossterm">bins</a><span class="glossdef">Equal size ranges into which measurements are sorted to obtain a frequency distribution.</span></span>, the measurements can be sorted, and the number of measurements that fall into each bin can be counted. The result is a <span class="margin_term"><a class="glossterm">frequency distribution</a><span class="glossdef">The number of measurements that fall into defined bins.</span></span> that shows how many measurements fall into each bin. If the effects that are causing the differences are random and tend to offset each other, the frequency distribution is called a <span class="margin_term"><a class="glossterm">normal distribution</a><span class="glossdef">Frequency distribution that looks like a bell and is the result of offsetting random variations.</span></span>, which resembles the shape of a bell with edges that flare out. The edges of a theoretical normal distribution curve get very close to zero but do not reach zero.</p>
+        <div class="callout editable block" id="fwk-38087-ch10_s01_s02_n02">
+            <h3 class="title">Normal Distribution of Gasoline Samples</h3>
+            <p class="para" id="fwk-38087-ch10_s01_s02_p05">A refinery’s quality control manager measures many samples of 87 octane gasoline, sorts the measurements by their octane rating into bins that are 0.1 octane wide, and then counts the number of measurements in each bin. Then she creates a frequency distribution chart of the data, as shown in <a class="xref" href="#fwk-38087-ch10_s01_s02_f01">Figure 10.1 "Normal Distribution of Measurements of Gasoline Samples"</a>.</p>
+        </div>
+        <p class="para editable block" id="fwk-38087-ch10_s01_s02_p06">If the measurements of product samples are distributed equally above and below the center of the distribution as they are in <a class="xref" href="#fwk-38087-ch10_s01_s02_f01">Figure 10.1 "Normal Distribution of Measurements of Gasoline Samples"</a>, the average of those measurements is also the center value that is called the <span class="margin_term"><a class="glossterm">mean</a><span class="glossdef">Average found by summing the values and dividing by the number of values.</span></span> and is represented in formulas by the lowercase Greek letter µ (pronounced mu). The amount of difference of the measurements from the central value is called the sample standard deviation or just the <span class="margin_term"><a class="glossterm">standard deviation</a><span class="glossdef">A type of average that takes into account positive and negative values where a sample is used instead of all the measurements. To calculate the standard deviation, first the difference between each value and the mean is squared. The squared values are summed and divided by the number of values minus one. The square root of this value is the standard deviation, also known as the Sample Standard Deviation.</span></span>. The first step in calculating the standard deviation is subtracting each measurement from the central value and then squaring that difference. (Recall from your mathematics courses that squaring a number is multiplying it by itself and that the result is always positive.) The next step is to sum these squared values and divide by the number of values minus one. The last step is to take the square root. The result can be thought of as an average difference. (If you had used the usual method of taking an average, the positive and negative numbers would have summed to zero.) Mathematicians represent the standard deviation with the lowercase Greek letter σ (pronounced sigma). If all the elements of a group are measured, it is called the standard deviation of the population and the second step does not use a minus one.</p>
+        <div class="figure large editable block" id="fwk-38087-ch10_s01_s02_f01">
+            <p class="title"><span class="title-prefix">Figure 10.1</span> Normal Distribution of Measurements of Gasoline Samples</p>
+            <img src="section_12/5d7e5c4d768f23380a02541642464422.jpg">
+            <p class="para">The chart shows that the most common measurements of octane rating are close to 87 and that the other measurements are distributed equally above and below 87. The shape of the distribution chart supports the central limit theorem’s assumption that the factors that are affecting the octane rating are random and tend to offset each other, which is indicated by the symmetric shape. This distribution is a classic example of a normal distribution. The quality control manager notices that none of the measurements are above 88 or below 86 so they are within control limits and concludes that the process is working satisfactorily.</p>
+        </div>
+        <div class="callout block" id="fwk-38087-ch10_s01_s02_n03">
+            <h3 class="title">Standard Deviation of Gasoline Samples</h3>
+            <p class="para" id="fwk-38087-ch10_s01_s02_p07">The refinery’s quality control manager uses the standard deviation function in his spreadsheet program to find the standard deviation of the sample measurements and finds that for his data, the standard deviation is 0.3 octane. She marks the range on the frequency distribution chart to show the values that fall within one sigma (standard deviation) on either side of the mean. See the figure below.</p>
+            <div class="figure large" id="fwk-38087-ch10_s01_s02_f02">
+                <p class="title"><span class="title-prefix">Figure 10.2</span> </p>
+                <img src="section_12/616186a671b7e5ed25a99197bad34abe.jpg">
+                <p class="para">Most of the measurements are within 0.3 octane of 87.</p>
+            </div>
+        </div>
+        <p class="para editable block" id="fwk-38087-ch10_s01_s02_p08">For normal distributions, about 68.3 percent of the measurements fall within one standard deviation on either side of the mean. This is a useful rule of thumb for analyzing some types of data. If the variation between measurements is caused by random factors that result in a normal distribution and someone tells you the mean and the standard deviation, you know that a little over two-thirds of the measurements are within a standard deviation on either side of the mean. Because of the shape of the curve, the number of measurements within two standard deviations is 95.4 percent, and the number of measurements within three standard deviations is 99.7 percent. For example, if someone said the average (mean) height for adult men in the United States is 5 feet 10 inches (70 inches) and the standard deviation is about 3 inches, you would know that 68 percent of the men in the United States are between five feet seven inches (67 inches) and six feet one inch (73 inches) in height. You would also know that about 95 percent of the adult men in the United States were between five feet four inches and six feet four inches tall, and that almost all of them (99.7 percent) are between five feet one inches and six feet seven inches tall. These figures are referred to as the <span class="margin_term"><a class="glossterm">68-95-99.7 rule</a><span class="glossdef">Approximate percentages of measurements that are within one, two, and three standard deviations of the mean.</span></span>.</p>
+        <div class="callout block" id="fwk-38087-ch10_s01_s02_n04">
+            <h3 class="title">Almost All Samples of Gasoline are Within Three STD</h3>
+            <p class="para" id="fwk-38087-ch10_s01_s02_p09">The refinery’s quality control manager marks the ranges included within two and three standard deviations, as shown below.</p>
+            <div class="figure large" id="fwk-38087-ch10_s01_s02_f03">
+                <p class="title"><span class="title-prefix">Figure 10.3</span> The 68-95-99.7 Rule</p>
+                <img src="section_12/27edc1512f836b81f3b56fccf4f2f15e.jpg">
+            </div>
+        </div>
+        <p class="para editable block" id="fwk-38087-ch10_s01_s02_p10">Some products must have less variability than others to meet their purpose. For example, if one machine drills a hole and another machine shapes a rod that will slide through the hole, it might be very important to be sure that if the smallest hole was ever matched with the widest rod, that the rod would still fit. Three standard deviations from the control limits might be fine for some products but not for others. In general, if the mean is six standard deviations from both control limits, the likelihood of a part exceeding the control limits from random variation is practically zero (2 in 1,000,000,000). Refer to <a class="xref" href="#fwk-38087-ch10_s01_s02_f04">Figure 10.4 "Meaning of Sigma Levels"</a>.</p>
+        <div class="figure large editable block" id="fwk-38087-ch10_s01_s02_f04">
+            <p class="title"><span class="title-prefix">Figure 10.4</span> Meaning of Sigma Levels</p>
+            <img src="section_12/707564a8e0b6c05ddc9d73265f55f7bf.jpg">
+            <p class="para"></p>
+        </div>
+        <div class="callout block" id="fwk-38087-ch10_s01_s02_n07">
+            <h3 class="title">A Step Project Improves Quality of Gasoline</h3>
+            <p class="para" id="fwk-38087-ch10_s01_s02_p12">A new refinery process is installed that produces fuels with less variability. The refinery’s quality control manager takes a new set of samples and charts a new frequency distribution diagram, as shown below.</p>
+            <div class="figure large" id="fwk-38087-ch10_s01_s02_f05">
+                <p class="title"><span class="title-prefix">Figure 10.5</span> Smaller Standard Deviation</p>
+                <img src="section_12/f5344e8b87c98522ec8f092bf42ce5a2.jpg">
+                <p class="para"></p>
+            </div>
+            <p class="para" id="fwk-38087-ch10_s01_s02_p13">The refinery’s quality control manager calculates that the new standard deviation is 0.2 octane. From this, he can use the 68-95-99.7 rule to estimate that 68.3 percent of the fuel produced will be between 86.8 and 87.2 and that 99.7 percent will be between 86.4 and 87.6 octane. A shorthand way of describing this amount of control is to say that it is a five-sigma production system, which refers to the five standard deviations between the mean and the control limit on each side.</p>
+        </div>
+        <div class="key_takeaways editable block" id="fwk-38087-ch10_s01_s02_n05">
+            <h3 class="title">Key Takeaways</h3>
+            <ul class="itemizedlist" id="fwk-38087-ch10_s01_s02_l01">
+                <li>Quality is the degree to which a product or service fulfills requirements and provides value for its price.</li>
+                <li>Statistics is the mathematical interpretation of numerical data, and several statistical terms are used in quality control. Control limits are the boundaries of acceptable variation.</li>
+                <li>If random factors cause variation, they will tend to cancel each other out—the central limit theorem. The central point in the distribution is the mean, which is represented by the Greek letter mu, µ. If you choose intervals called bins and count the number of samples that fall into each interval, the result is a frequency distribution. If you chart the distribution and the factors that cause variation are random, the frequency distribution is a normal distribution, which looks bell shaped.</li>
+                <li>The center of the normal distribution is called the mean, and the average variation is calculated in a special way that finds the average of the squares of the differences between samples and the mean and then takes the square root. This average difference is called the standard deviation, which is represented by the Greek letter sigma, σ.</li>
+                <li>About 68 percent of the samples are within one standard deviation, 95.4 percent are within two, and 99.7 percent are within three.</li>
+            </ul>
+        </div>
+        <div class="exercises editable block" id="fwk-38087-ch10_s01_s02_n06">
+            <h3 class="title">Exercises</h3>
+            <ol class="orderedlist" id="fwk-38087-ch10_s01_s02_l02">
+                <li>According to the ISO, quality is the degree to which a set of inherent characteristics fulfill ___________.</li>
+                <li>The upper and lower extremes of acceptable variation from the mean are called the __________ limits.</li>
+                <li>The odds that a sample’s measurement will be within one standard deviation of the mean is ____ percent.</li>
+                <li>How is quality related to grade?</li>
+                <li>If the measurements in a frequency distribution chart are grouped near the mean in normal distribution, what does that imply about the causes of the variation?</li>
+                <li>If you have a set of sample data and you had to calculate the standard deviation, what are the steps?</li>
+                <li>If a set of sample measurements has a mean of 100, a normal distribution, a standard deviation of 2, and control limits of 94 and 106, what percentage of the samples are expected to be between 94 and 106? Explain your answer.</li>
+            </ol>
+            <p class="simpara">Using Statistical Measures</p>
+            <p class="para" id="fwk-38087-ch10_s01_s02_p11">Choose two groups of people or items that have a measurable characteristic that can be compared, such as the height of adult males and females. Describe the distribution of the measurements by stating whether you think the groups have a relatively small or large standard deviation and whether the distributions overlap (e.g., some women are taller than some men even though the mean height for men is greater than the mean height for women). Demonstrate that you know how to use the following terms correctly in context:</p>
+            <ul class="itemizedlist" id="fwk-38087-ch10_s01_s02_l03">
+                <li>Normal distribution</li>
+                <li>Standard deviation</li>
+                <li>Mean</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s11-04-software-and-technology-exerci.html"><img src="shared/images/batch-left.png"></a> <a href="s11-04-software-and-technology-exerci.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s12-02-development-of-quality-as-a-co.html">Next Section</a> <a href="s12-02-development-of-quality-as-a-co.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

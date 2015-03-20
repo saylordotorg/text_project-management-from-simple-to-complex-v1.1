@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Critical Path and Float</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s10-02-elements-of-time-management.html"><img src="shared/images/batch-left.png"></a> <a href="s10-02-elements-of-time-management.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s10-04-managing-the-schedule.html">Next Section</a> <a href="s10-04-managing-the-schedule.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="fwk-38087-ch08_s03" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">8.3</span> Critical Path and Float</h2>
+    <div class="learning_objectives editable block" id="fwk-38087-ch08_s03_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="fwk-38087-ch08_s03_l01">
+            <li>Calculate critical path, project float, early start dates, and late start dates.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="fwk-38087-ch08_s03_p01">The <span class="margin_term"><a class="glossterm">critical path</a><span class="glossdef">Sequence of activities through the network that results in the latest completion date of the project.</span></span> is the path through the network that results in the latest completion date of the project.</p>
+    <p class="para editable block" id="fwk-38087-ch08_s03_p02">If any activity on the critical path is delayed, the completion of the project will be delayed by an equal amount. It is the path with the greatest total duration. To determine the critical path, add the amount of time estimated for the duration of each activity to the previous activity to determine which path through the network has the longest total duration, as shown in <a class="xref" href="#fwk-38087-ch08_s03_f01">Figure 8.15 "Critical Path"</a>. Durations are indicated in days. The critical path through these tasks takes at least eight days. Activities on the critical path are shaded.</p>
+    <div class="figure large editable block" id="fwk-38087-ch08_s03_f01">
+        <p class="title"><span class="title-prefix">Figure 8.15</span> Critical Path</p>
+        <img src="section_10/7b7300aff41df87385e744e8b3320134.jpg">
+    </div>
+    <div class="section" id="fwk-38087-ch08_s03_s01">
+        <h2 class="title editable block">Early Start Dates</h2>
+        <p class="para editable block" id="fwk-38087-ch08_s03_s01_p01">Starting dates can be assigned to each activity by doing a <span class="margin_term"><a class="glossterm">forward pass</a><span class="glossdef">The process of determining the earliest starting date for each activity by beginning at the project start date and adding the activity durations, resulting with the early finish date for the project.</span></span> proceeding from left to right in the network diagram beginning with the project start date. The dates derived by this method are the <span class="margin_term"><a class="glossterm">early start (ES) dates</a><span class="glossdef">The soonest date an activity can begin determined by the project start date and the durations of its predecessor activities.</span></span>. The early start date for an activity is the earliest date the activity can begin. The estimate considers durations and resource availability calendars. To calculate early start dates, begin with the project start date and assign that date as the start date of activities that have no predecessor activities. Follow these steps to calculate the early start dates of subsequent activities, assuming finish-start relationships:</p>
+        <ul class="itemizedlist editable block" id="fwk-38087-ch08_s03_s01_l01">
+            <li>Add the predecessor activity’s duration to its start date.</li>
+            <li>Add the lag time or subtract the lead time.</li>
+            <li>Refer to the resource calendar (or calendars) that applies to the people and equipment necessary for the activity, and add the number of off-days that the activity would span on those calendars.</li>
+            <li>Assign the calculated date as the early start date of the successor activity.</li>
+        </ul>
+        <div class="callout block" id="fwk-38087-ch08_s03_s01_n01">
+            <h3 class="title">Forward Pass for John’s Move</h3>
+            <p class="para" id="fwk-38087-ch08_s03_s01_p02">John begins planning his move to Atlanta the same day he accepts the job. The start date in this example is Monday, November 29, 2010. Tasks 1.1 and 2.1 can both start on that day, so the early start dates for tasks 1.1 and 2.1 are November 29. John calculates the early start date for the activities. A partial list is provided below. Compare the figure below and the figure in the next sidebar. Observe that John is willing to work on weekends, but activity 2.2.3 is delayed by two days because one of the moving companies did not provide bids on the weekend. Observe that activity 2.3 has a lead time of one day, but that relationship is between activity 2.1 and 2.3. The network path from activity 1.3 is longer, so the lead time with activity 2.1 is not considered in calculating the early start date of 2.3.</p>
+            <div class="figure large medium-height" id="fwk-38087-ch08_s03_s01_f01">
+                <p class="title"><span class="title-prefix">Figure 8.16</span> Early Start Dates Determined by a Forward Pass</p>
+                <img src="section_10/3789f68c83f1bd4aff779caa745019f1.jpg">
+            </div>
+        </div>
+        <p class="para editable block" id="fwk-38087-ch08_s03_s01_p03">Doing this process manually is error prone and time consuming. Fortunately, there are computer programs to assist in the process, but the project manager must understand the process well enough to recognize computer errors. Computer software must be combined with common sense or good judgment.</p>
+    </div>
+    <div class="section" id="fwk-38087-ch08_s03_s02">
+        <h2 class="title editable block">Float</h2>
+        <p class="para editable block" id="fwk-38087-ch08_s03_s02_p01"><span class="margin_term"><a class="glossterm">Float</a><span class="glossdef">The amount of time an activity can be delayed from an early start without delaying the completion date.</span></span>, sometimes called slack, is the amount of time an activity, network path, or project can be delayed from the early start without changing the completion date of the project.</p>
+        <div class="section" id="fwk-38087-ch08_s03_s02_s01">
+            <h2 class="title editable block">Total Float</h2>
+            <p class="para editable block" id="fwk-38087-ch08_s03_s02_s01_p01"><span class="margin_term"><a class="glossterm">Total float</a><span class="glossdef">The amount of time the project start date can be delayed without delaying the project completion date.</span></span> is the difference between the finish date of the last activity on the critical path and the project completion date. Any delay in an activity on the critical path would reduce the amount of total float available on the project. A project can also have <span class="margin_term"><a class="glossterm">negative float</a><span class="glossdef">The amount by which the early completion date exceeds the project completion date.</span></span>, which means the calculated completion date of the last activity is later than the targeted completion date established at the beginning of the project.</p>
+            <div class="callout block" id="fwk-38087-ch08_s03_s02_s01_n01">
+                <h3 class="title">Float in John’s Move</h3>
+                <p class="para" id="fwk-38087-ch08_s03_s02_s01_p02">The last activity in John’s move has an early start date of December 28 and a duration of one day. John could start work on Wednesday, December 29. John’s first day at work is Monday, January 3, so the project has a total float of five days.</p>
+                <div class="figure large medium-height" id="fwk-38087-ch08_s03_s02_s01_f01">
+                    <p class="title"><span class="title-prefix">Figure 8.17</span> Total Project Float</p>
+                    <img src="section_10/8a58bf8cf911d34081157e8641e58ffd.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="fwk-38087-ch08_s03_s03">
+        <h2 class="title editable block">Late Start Dates</h2>
+        <p class="para editable block" id="fwk-38087-ch08_s03_s03_p01">The next step is to work through the network diagram from right to left beginning with the mandated completion date, which is a milestone that is set in the project plan. Subtract the duration of each activity in each path to determine the latest date the activity could begin and still meet the project completion date. Resource calendars must be considered in the backward pass as well as the forward pass.</p>
+        <p class="para editable block" id="fwk-38087-ch08_s03_s03_p02">To calculate late start dates, begin with the project completion milestone and assign that date as the finish date of its predecessor activities. Follow these steps to calculate the late start dates of predecessor activities, assuming finish-start relationships:</p>
+        <ul class="itemizedlist editable block" id="fwk-38087-ch08_s03_s03_l01">
+            <li>Subtract the predecessor activity’s duration from its late finish date.</li>
+            <li>Subtract the lag time or add the lead time to the late finish date.</li>
+            <li>Refer to the resource calendar (or calendars) that applies to the people and equipment necessary for the activity, and subtract the number of off days that the activity would span on those calendars.</li>
+            <li>Assign the calculated date as the late start date of the predecessor activity.</li>
+        </ul>
+        <p class="para editable block" id="fwk-38087-ch08_s03_s03_p03">The difference between the early start date and the late start date for activities on the critical path is usually the same as the total float, unless the activities are affected by the resource calendars differently in the forward and backward pass. For example, if a piece of key equipment is only available for a few days, activities that depend on it have the same start and finish dates in the forward and backward passes.</p>
+        <div class="section" id="fwk-38087-ch08_s03_s03_s01">
+            <h2 class="title editable block">Free Float</h2>
+            <p class="para editable block" id="fwk-38087-ch08_s03_s03_s01_p01">If activities that are not on the critical path have a difference between their early start date and their late start date, those activities can be delayed without affecting the project completion date. The float on those activities is called <span class="margin_term"><a class="glossterm">free float</a><span class="glossdef">The time an activity that is not on the critical path can be delayed without delaying the start of a successor activity.</span></span>.</p>
+            <div class="key_takeaways editable block" id="fwk-38087-ch08_s03_s03_s01_n01">
+                <h3 class="title">Key Takeaway</h3>
+                <ul class="itemizedlist" id="fwk-38087-ch08_s03_s03_s01_l01">
+                    <li>To calculate total project float, begin at the start date and add the duration of each activity in each possible path through the network diagram, including nonworking days from the resource calendars, to determine the early project end date. The longest path through the network is the critical path. The difference between the early end date and the required completion date of the project is the total project float, and the start date of each activity is the early start date. To calculate the late start dates, begin with the required project completion date and work backward, subtracting the duration of each activity through each possible pathway.</li>
+                </ul>
+            </div>
+            <div class="exercises editable block" id="fwk-38087-ch08_s03_s03_s01_n02">
+                <h3 class="title">Exercises</h3>
+                <ol class="orderedlist" id="fwk-38087-ch08_s03_s03_s01_l02">
+                    <li>The path through the network diagram that has the longest total duration is the __________ path.</li>
+                    <li>The difference between the sum of the activity durations along the critical path and the project completion date is the project _______.</li>
+                    <li>If two sequential activities overlap and the successor activity can begin three days before the predecessor begins, those three days are called _________ time.</li>
+                    <li>If the last activity in the critical path has a completion date that is five days later than the project completion date, the project has a _______ _________ (two words) of five days.</li>
+                    <li>What is the difference between free float and project float?</li>
+                    <li>If an activity has a duration of three days, how do you calculate the finish date in a way that considers availability of the resources for that activity?</li>
+                    <li>What would be an example of lag time between two activities?</li>
+                </ol>
+                <p class="simpara">Project Float</p>
+                <p class="para" id="fwk-38087-ch08_s03_s03_s01_p02">Consider a project in which you have been involved that experienced unexpected delays. Describe how the project’s manager dealt with the delays. Specifically, consider if the delay was due to an activity that was on the project’s critical path, if people or resources were diverted from other tasks, or if free float existed in the original schedule. Describe the ultimate effect on the project’s completion date.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s10-02-elements-of-time-management.html"><img src="shared/images/batch-left.png"></a> <a href="s10-02-elements-of-time-management.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s10-04-managing-the-schedule.html">Next Section</a> <a href="s10-04-managing-the-schedule.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

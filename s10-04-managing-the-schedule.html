@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Managing the Schedule</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s10-03-critical-path-and-float.html"><img src="shared/images/batch-left.png"></a> <a href="s10-03-critical-path-and-float.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s10-05-project-scheduling-software.html">Next Section</a> <a href="s10-05-project-scheduling-software.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="fwk-38087-ch08_s04" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">8.4</span> Managing the Schedule</h2>
+    <div class="learning_objectives editable block" id="fwk-38087-ch08_s04_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="fwk-38087-ch08_s04_l01">
+            <li>Describe methods of tracking and reporting progress.</li>
+            <li>Define resource leveling.</li>
+            <li>Describe methods of accelerating the schedule.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="fwk-38087-ch08_s04_p01">To manage a schedule, the project manager must know how the work is progressing compared to the master schedule and, if necessary, make changes to keep the project on time.</p>
+    <div class="section" id="fwk-38087-ch08_s04_s01">
+        <h2 class="title editable block">Tracking and Reporting Progress</h2>
+        <p class="para editable block" id="fwk-38087-ch08_s04_s01_p01">Tracking the schedule performance involves measuring the work performed against the work expected to be performed with a given expenditure of resources. Periodic reporting on the progress of the project provides the project management team with information on how the project is performing against expectations and to make decisions and corrections. Accurate measurement of schedule performance requires planning during the early stages of the project to determine the unit of measure and process for tracking progress.</p>
+        <div class="section" id="fwk-38087-ch08_s04_s01_s01">
+            <h2 class="title editable block">Reporting Percentage Completed</h2>
+            <p class="para editable block" id="fwk-38087-ch08_s04_s01_s01_p01">To determine the percentage of a project that has been completed, the project manager must determine what to measure. Some percentages are misleading. For example, a project that has completed 25 percent of the scheduled activities does not mean that the project is 25 percent complete. In our John’s move example, four rooms were to be packed. After the bedroom was packed, packing was not 25 percent complete. The kitchen contained five times as many items and required more delicate, time-consuming packing. John estimated that 40 percent of the items to be packed were in the kitchen, 20 percent in the living room, 20 percent in the bedroom, and the remaining 20 percent in miscellaneous locations. If the unit of measure for these activities is items packed, the packing is only 20 percent complete instead of 25 percent if rooms are the unit of measure.</p>
+            <p class="para editable block" id="fwk-38087-ch08_s04_s01_s01_p02">The unit of measure for tracking schedule progress is related to the estimate. If hours of labor are used as the unit of measure, the percentage of packing is even less because more time is estimated to pack each item in the kitchen. As the project management team estimates the duration for each activity, the amount of work to accomplish the tasks is captured in both resources expended and a unit of measure for tracking progress. The unit of measure is related to the type of project. On a software development project, the unit of measure may be lines of code written. The unit of measure that is chosen can affect the quality of the work.</p>
+            <div class="callout block" id="fwk-38087-ch08_s04_s01_s01_n01">
+                <h3 class="title">Units of Measure on a Programming Project</h3>
+                <p class="para" id="fwk-38087-ch08_s04_s01_s01_p03">Steve Ballmer of Microsoft recalls early clashes with IBM over the unit of measure used to determine how much Microsoft would get paid for its work.</p>
+                <span class="blockquote" id="fwk-38087-ch08_s04_s01_s01_bl01">
+                    <p class="para" id="fwk-38087-ch08_s04_s01_s01_p04">In IBM there’s a religion in software that says you have to count K-LOCs, and a K-LOC is a thousand lines of code. How big a project is it? Oh, it’s sort of a 10 K-LOC project. This is a 20 K-LOCer. And this is 50 K-LOCs. And IBM wanted to sort of make it the religion about how we got paid. How much money we made off OS/2, how much they did. How many K-LOCs did you do? And we kept trying to convince them—hey, if we have—a developer’s got a good idea and he can get something done in 4 K-LOCs instead of 20 K-LOCs, should we make less money? Because he’s made something smaller and faster, less KLOC. K-LOCs, K-LOCs, that’s the methodology. Ugh anyway, that always makes my back just crinkle up at the thought of the whole thing.<span class="footnote" id="fwk-38087-fn08_003">Robert X. Cringely, <em class="emphasis">Triumph of the Nerds</em>, June 1996, <a class="link" href="http://www.pbs.org/nerds/part2.html">http://www.pbs.org/nerds/part2.html</a> (accessed July 27, 2009).</span></p>
+                </span>
+                <p class="para" id="fwk-38087-ch08_s04_s01_s01_p05">In this case, IBM’s insistence on using thousands of lines of code as the unit of measure did not reward Microsoft for writing smaller code that would run faster. Microsoft and IBM cancelled their joint project for writing an operating system named OS/2. Microsoft wrote Windows, and IBM’s OS/2 operating system was not able to compete with it successfully.</p>
+            </div>
+            <p class="para editable block" id="fwk-38087-ch08_s04_s01_s01_p06">On a construction project, a unit of measure may be yards of concrete poured, and on a training project, the unit of measure may be the class curriculums developed or the students taught.</p>
+        </div>
+        <div class="section" id="fwk-38087-ch08_s04_s01_s02">
+            <h2 class="title editable block">Managing Schedules Using Milestones</h2>
+            <p class="para editable block" id="fwk-38087-ch08_s04_s01_s02_p01">Milestones provide the opportunity for project management to focus on completing activities that will have the greatest impact on the schedule. On complex projects, focusing on the milestones is useful for communicating important dates to the entire project team. Project team members can then adjust their efforts to complete the activities connected to the milestone events.</p>
+            <p class="para editable block" id="fwk-38087-ch08_s04_s01_s02_p02">Many project leaders believe that time lost on early activities can be made up toward the end of the project. Hard decisions about paying overtime and working weekends are often delayed until the end of the project when the pressure to complete the project on time becomes much stronger. Project managers who focus on milestone events create a sense of urgency to meet the milestone deadlines and spread the urgency to complete the project over the life of the project. Projects that meet milestone dates are more likely to meet project completion dates.</p>
+        </div>
+        <div class="section" id="fwk-38087-ch08_s04_s01_s03">
+            <h2 class="title editable block">Informing Stakeholders</h2>
+            <p class="para editable block" id="fwk-38087-ch08_s04_s01_s03_p01">A schedule update is distributed regularly to provide project stakeholders with an assessment of the progress of the project against the master schedule. This updated schedule is called the <span class="margin_term"><a class="glossterm">current schedule</a><span class="glossdef">An updated schedule that show the present status of the project.</span></span>. The current schedule provides new start and end dates for all activities and the project. Calculations based on the current schedule may result in a new critical path and subsequent changes in the project execution plan.</p>
+            <p class="para editable block" id="fwk-38087-ch08_s04_s01_s03_p02">The project team develops an understanding of the project productivity by comparing the current schedule to the original schedule. If the schedule is behind original estimates, the project team conducts an assessment of the causes of the schedule slippage and develops a plan to address the changes to the project. The project management team typically has several alternatives for addressing changes to the project situation. Selecting the right alternative requires good information.</p>
+        </div>
+    </div>
+    <div class="section" id="fwk-38087-ch08_s04_s02">
+        <h2 class="title editable block">Resource Leveling</h2>
+        <p class="para editable block" id="fwk-38087-ch08_s04_s02_p01">The schedule of activities is constrained by the availability of resources. If you apply the resource calendar to each activity to be sure the people and equipment are available on those dates, you can still miss an important constraint. If there are several activities that use a particular person’s time on the same days, that person could end up with too many activities scheduled for the same days and very little on other days. If key people are overloaded, the activities to which they are assigned might not be completed on time. Managing the schedule of activities to ensure that enough resources are available to complete each task by distributing the work load is called <span class="margin_term"><a class="glossterm">resource leveling</a><span class="glossdef">Distributing work load to reduce uneven concentrations of work.</span></span>. Activities to which that person is assigned and that have free float can be delayed to reduce work overload of key people.</p>
+    </div>
+    <div class="section" id="fwk-38087-ch08_s04_s03">
+        <h2 class="title editable block">Accelerating the Schedule</h2>
+        <p class="para editable block" id="fwk-38087-ch08_s04_s03_p01">The project manager must know how to accelerate a schedule to compensate for unanticipated events that delay critical activities or to accommodate changes in the project completion date. Compressing or crashing the schedule are terms used to describe the various techniques used to shorten the project schedule. Project managers utilize several techniques to keep projects on schedule.</p>
+        <div class="section" id="fwk-38087-ch08_s04_s03_s01">
+            <h2 class="title editable block">Contingency Resources</h2>
+            <p class="para editable block" id="fwk-38087-ch08_s04_s03_s01_p01">One method of accelerating the schedule is to add activities to the critical path that are empty or that are optional. If the project is behind schedule, the time can be made up by dropping these activities. This extra time that is built into the schedule is called <span class="margin_term"><a class="glossterm">contingency time</a><span class="glossdef">Additional time added to the schedule that can be used if a scheduled activity exceeds its estimated duration.</span></span>, buffer, or reserve time.</p>
+        </div>
+        <div class="section" id="fwk-38087-ch08_s04_s03_s02">
+            <h2 class="title editable block">Reassigning Resources</h2>
+            <p class="para editable block" id="fwk-38087-ch08_s04_s03_s02_p01">Activities that are not on the critical path that have free float can be delayed without delaying the end date of the project if they start by the late start date. Project managers can divert some resources from activities with free float to activities on the critical path without delaying the completion of the project.</p>
+        </div>
+        <div class="section" id="fwk-38087-ch08_s04_s03_s03">
+            <h2 class="title editable block">Changing Scope</h2>
+            <p class="para editable block" id="fwk-38087-ch08_s04_s03_s03_p01">The unit cost of work to be performed on a project is calculated at the beginning of the project based on the execution strategy of the project to meet the project completion date. If the project completion date is moved up, then the unit cost of work will likely increase. Conversely, a project team may be able to save money by extending the project end date. With more time, the project team may be able to schedule activities in such a way to reduce their costs. For example, an activity requiring overtime to be paid can now pay the labor at normal rates, saving the overtime premium. Changing elements of the master schedule means a change in scope. Scope changes often affect costs and require agreement by the parties who signed the original scope documents.</p>
+        </div>
+        <div class="section" id="fwk-38087-ch08_s04_s03_s04">
+            <h2 class="title editable block">Additional Resources</h2>
+            <p class="para editable block" id="fwk-38087-ch08_s04_s03_s04_p01">Another option is to allocate funds that can be used to add resources if necessary. Available resources can be increased by adding overtime to existing resource calendars or by hiring additional contract workers or renting additional equipment.</p>
+            <div class="callout editable block" id="fwk-38087-ch08_s04_s03_s04_n01">
+                <h3 class="title">Adding Resources to the Dreamliner Project</h3>
+                <p class="para" id="fwk-38087-ch08_s04_s03_s04_p02">When Boeing sales of the new 878 Dreamliner Airplane exceeded expectations, contractors who were building the plane were asked to increase production while maintaining all quality and safety requirements. All contractors involved in the plane production were affected by this change.</p>
+                <p class="para" id="fwk-38087-ch08_s04_s03_s04_p03">One project team was responsible for developing and delivering training to the new employees who would be building the fuselage of the Dreamliner. Training for new employees had to be complete three months early and the project team developed an execution strategy to meet the new deadlines. The project had a month of float, so the project accelerated the schedule by two months. The team authorized overtime from forty to fifty hours a week for team members working activities on the critical path. The project team leased additional space and hired contractors to perform selected work packages on the critical path and delayed the production of library quality documents until after the critical dates on the project. Authorizing overtime and hiring contractors added a 15 percent cost to the project. Overtime and the procurement of additional contract help was authorized only for work packages on the critical path because work not on the critical path would not accelerate the schedule.</p>
+                <p class="para" id="fwk-38087-ch08_s04_s03_s04_p04">A concrete contractor on a construction project may be scheduled to lay one thousand yards of a building foundation by pouring one hundred yards a day for ten days. Foundations are on the critical path, and because of rain, the project is three days behind schedule. The project manager asked the concrete contractor to bring in a second crew and pour two hundred yards a day, and the work is complete in five days.</p>
+            </div>
+        </div>
+        <div class="section" id="fwk-38087-ch08_s04_s03_s05">
+            <h2 class="title editable block">Changing Quality</h2>
+            <p class="para editable block" id="fwk-38087-ch08_s04_s03_s05_p01">Another option for accelerating the schedule is the changing of the quality specifications of the product. This is usually done as a scope change.</p>
+            <div class="callout editable block" id="fwk-38087-ch08_s04_s03_s05_n01">
+                <h3 class="title">Making Up Time by Reducing Quality</h3>
+                <p class="para" id="fwk-38087-ch08_s04_s03_s05_p02">At a midwestern university, a new building was being built, but it was behind schedule. To speed up the installation of the heating and cooling equipment, it was decided to make the zones of control larger, which meant that each floor would have fewer points where temperature was sensed and controlled and fewer air flow control boxes. The contract did not specify the zone size or how many control points were required on each floor of the building, so this change did not require a change in scope. As a result, when the sun is coming in on the south side of the building, those rooms get as much heat or cooling as the rooms on the north side, so they are often too hot. If the single temperature controller on each floor is set to a lower temperature, the rooms on the north side are too cold. The client for the building did not realize this change had been made until they were in the building for several months and the project was completed.</p>
+            </div>
+            <div class="key_takeaways editable block" id="fwk-38087-ch08_s04_s03_s05_n02">
+                <h3 class="title">Key Takeaways</h3>
+                <ul class="itemizedlist" id="fwk-38087-ch08_s04_s03_s05_l01">
+                    <li>Progress can be measured by determining the percentage of resources expended, completion of activities by scheduled dates, milestones achieved, or fraction of activities accomplished. Standards used to measure progress, particularly when partial payment to contractors is concerned, should be specified in contract documents.</li>
+                    <li>Resource leveling is reallocating people and equipment to remove periods of overuse or underuse.</li>
+                    <li>Unplanned delays and costs can be anticipated by including contingency time and budget amounts where needed to keep the schedule on time. Resource allocation and resource calendars should be examined to determine if a resource is overcommitted. Free float can be used to delay noncritical activities that use the same resource to allocate its time more evenly. If it is necessary to accelerate the schedule, activities that are not on the critical path can be delayed using their free float and their resources can be moved to activities on the critical path to complete them sooner. Contingency resources can be committed to speeding up the activities. If necessary, the scope can be changed to bring in additional resources or lower the quality.</li>
+                </ul>
+            </div>
+            <div class="exercises editable block" id="fwk-38087-ch08_s04_s03_s05_n03">
+                <h3 class="title">Exercises</h3>
+                <ol class="orderedlist" id="fwk-38087-ch08_s04_s03_s05_l02">
+                    <li>Accelerating the project schedule is also known as ________ the project.</li>
+                    <li>Extra amounts of time and money that are built into the schedule to buffer against delays and extra costs are called ___________ time or funds.</li>
+                    <li>What might be a drawback to a reporting method that stated project progress as a fraction of activities completed?</li>
+                    <li>How does a manager accelerate a project by using free float?</li>
+                </ol>
+                <p class="simpara">Progress Reports</p>
+                <p class="para" id="fwk-38087-ch08_s04_s03_s05_p03">From the client’s point of view, describe what you think would be the advantages of each type of progress measurement.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s10-03-critical-path-and-float.html"><img src="shared/images/batch-left.png"></a> <a href="s10-03-critical-path-and-float.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s10-05-project-scheduling-software.html">Next Section</a> <a href="s10-05-project-scheduling-software.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

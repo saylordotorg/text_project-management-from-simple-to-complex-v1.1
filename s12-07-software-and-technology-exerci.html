@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Software and Technology Exercises</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s12-06-exercises.html"><img src="shared/images/batch-left.png"></a> <a href="s12-06-exercises.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s13-01-defining-risk.html">Next Section</a> <a href="s13-01-defining-risk.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="fwk-38087-ch10_s07" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">10.7</span> Software and Technology Exercises</h2>
+    <div class="learning_objectives editable block" id="fwk-38087-ch10_s07_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="fwk-38087-ch10_s07_l01">
+            <li>Predict likely range of values in a normal distribution.</li>
+            <li>Recognize assignable and unassignable causes of statistical variation.</li>
+        </ol>
+    </div>
+    <div class="section" id="fwk-38087-ch10_s07_s01">
+        <h2 class="title editable block">Predicting Value Ranges Using Standard Deviation</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s07_s01_p01">Real production processes are never perfect. In some cases, a few products that are too small or that do not work will just cause inconvenience, but in other cases they might be life threatening. Samples of the production process will show how much variation occurs. If it appears that the variations are distributed equally above and below the mean (average), it might be assumed that the statistics of a normal distribution can be used to predict the percentage of products that will be defective when many of them are produced even if none of the samples are defective.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s07_s01_p02">Some projects are initiated to increase the quality by reducing the variation in production. To understand the language of statistics and how it is used to justify a project, it is useful to gain a “feel” for how the distribution of samples is described by the standard deviation. A spreadsheet can be used to simulate samples of production runs where the mean and standard deviation can be chosen to show their relationship in a normal distribution. By trying different values for the standard deviation and observing the effect on the distribution of estimated samples in a chart, you can develop a sense of how the two are related.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s07_s01_p03">Recall that a standard deviation is called a sigma and represented by the Greek letter <em class="emphasis">σ</em> and the 68-95-99.7 rule refers to the percentage of samples that will be within one, two, and three standard deviations of the mean.</p>
+        <div class="section" id="fwk-38087-ch10_s07_s01_s01">
+            <h2 class="title editable block">Examine a Normal Distribution</h2>
+            <p class="para editable block" id="fwk-38087-ch10_s07_s01_s01_p01">Complete the exercise by following these instructions:</p>
+            <ol class="orderedlist block" id="fwk-38087-ch10_s07_s01_s01_l01">
+                <li>Navigate to the directory location where the exercise files for this unit are located and open <a class="link" href="http://www.gone.2012books.lardbucket.org/sites/all/files/Ch10STD.xls"><em class="emphasis">Ch10STD.xls</em></a> in a spreadsheet program such as MS Excel.</li>
+                <li>In cell A2, replace <em class="emphasis">StudentName</em> with your name.</li>
+                <li>This worksheet is designed to simulate a set of sample values that vary from the mean for random reasons and form a normal distribution. The data and calculations in columns A through F are hidden. They are used to calculate the values in column G on which the chart is based.</li>
+                <li>
+                    <p class="para">Notice the following features of the spreadsheet:</p>
+                    <ul class="itemizedlist" id="fwk-38087-ch10_s07_s01_s01_l02">
+                        <li>Column A has bins. In this example, the bins are .1 units wide. The size of the bin and the horizontal scale of the chart are determined by the value in cell L5.</li>
+                        <li>This simulation uses forty-two bins that are distributed equally above and below the mean. The mean value can be specified in cell L4.</li>
+                        <li>The usual method is to sample a sequence of products, count the number that fall into each bin, and then calculate the standard deviation. In this simulation, you can specify the standard deviation in cell L3, and the percentage of samples that are likely to occur in each bin is calculated and displayed in column G. The display is rounded to a whole percent. The display of decimal places can be increased using the spreadsheet’s controls.</li>
+                        <li>The percentage of estimated samples that occur in each bin is charted using a column chart. The scale at the left side of the chart indicates the percent of the samples in each bin.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="para">Compare the chart in the spreadsheet to the chart in <a class="xref" href="#fwk-38087-ch10_s07_s01_s01_f01">Figure 10.13 "Normal Distribution of Gasoline Samples"</a> that was used in the text. Observe that the standard deviation, <em class="emphasis">σ</em>, is .2 and that almost all the sample values occur between 86.4 and 87.6—three <em class="emphasis">σ</em> on either side of the mean.</p>
+
+                </li>
+                <li>Open a word processing document and then save it as <em class="emphasis">Ch10STDStudentName.doc</em>. Switch back to the spreadsheet and capture the screen. Switch to the word processing document and paste the screen into the document.</li>
+                <li>
+                    <p class="para">Switch back to the spreadsheet. To see the effect of a better production process that would have a <em class="emphasis">σ</em> of .1 instead of .2, click cell L3. Type <em class="emphasis">.1</em> and then, on the Formula bar, click the Enter button. The distribution narrows so that almost all the estimated samples are within .3 on either side of the mean (87.0), as shown in <a class="xref" href="#fwk-38087-ch10_s07_s01_s01_f02">Figure 10.14 "Normal Distribution with Smaller Standard Deviation"</a>.</p>
+
+                </li>
+                <li>Capture the screen showing in the narrow distribution and paste it into the word processing document.</li>
+                <li>
+                    <p class="para">In the spreadsheet, in cell L3, type <em class="emphasis">.4</em> and then, on the Formula bar, click the Enter button. Notice that a larger standard deviation means the distribution is more spread out. Three standard deviations is 1.2 (3 × .4), so almost all the samples will be within 1.2 on either side of the mean, as shown in <a class="xref" href="#fwk-38087-ch10_s07_s01_s01_f03">Figure 10.15 "Normal Distribution with Larger Standard Deviation"</a>.</p>
+
+                </li>
+                <li>Capture this screen and paste it into the word processing document.</li>
+                <li>Change the value in cell L3 to <em class="emphasis">1</em>. Almost all the samples will be above 84 (87−3) and below 90 (87+3), but the horizontal scale is too small to show all the values.</li>
+                <li>Change the value in cell L5 to <em class="emphasis">.3</em>.</li>
+                <li>Capture the screen and paste it into the word processing document.</li>
+            </ol>
+        </div>
+        <div class="section" id="fwk-38087-ch10_s07_s01_s02">
+            <h2 class="title editable block">Use the Spreadsheet for a Different Example</h2>
+            <p class="para editable block" id="fwk-38087-ch10_s07_s01_s02_p01">The effects of a lower-than-expected octane rating in a passenger car might be engine knock during acceleration and less power climbing a hill, but the effect of lower-than-expected octane fuel in a military aircraft might mean that the plane could not achieve the desired altitude or speed in a critical situation. Aviation gasoline is designed for use in high-performance engines that require 100 octane fuel. Use the spreadsheet to examine the estimated distribution of gasoline samples with a different mean and <em class="emphasis">σ</em>.</p>
+        </div>
+        <div class="section" id="fwk-38087-ch10_s07_s01_s03">
+            <h2 class="title editable block">Examine a Normal Distribution</h2>
+            <p class="para editable block" id="fwk-38087-ch10_s07_s01_s03_p01">Complete the exercise by following these instructions:</p>
+            <ol class="orderedlist block" id="fwk-38087-ch10_s07_s01_s03_l01">
+                <li>Change the value in cell L4 to <em class="emphasis">100</em> and the standard deviation in cell L3 to <em class="emphasis">.1</em>. Notice that a standard deviation of .1 means that 99.7 percent of the gasoline samples will be between 99.7 and 100.3 octane.</li>
+                <li>Practice changing the mean and standard deviation values in the spreadsheet. Each time you do so, predict the high and low values that represent three <em class="emphasis">σ</em> above and below the mean and use the spreadsheet to check your prediction. If the values extend beyond the sides of the chart, increase the increment value in cell L5.</li>
+                <li>Capture the screen that shows one of your estimates that is different from the examples shown in the previous steps and paste it into the word processing document.</li>
+                <li>In the word processing document, below the last screen, write between one hundred and two hundred words to describe what you learned about the relationship between the standard deviation and the distribution of likely values. Specifically describe how you predict the upper and lower limits of the range.</li>
+                <li>Close the spreadsheet. Do not save the changes.</li>
+                <li>Save the word processing document as <em class="emphasis">Ch10STDStudentName.doc</em>.</li>
+                <li>
+                    <p class="para">Review your work and use the following rubric to determine its adequacy:</p>
+                    <div class="informaltable" id="fwk-38087-ch10_s07_s01_s03_tx01" frame="all">
+                        <table cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Element</th>
+                                    <th>Best</th>
+                                    <th>Adequate</th>
+                                    <th>Poor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>File name</td>
+                                    <td>Ch10STDStudentName.doc</td>
+                                    <td>Same or .docx file format</td>
+                                    <td>Student name missing</td>
+                                </tr>
+                                <tr>
+                                    <td>Predict likely range of values in a normal distribution</td>
+                                    <td>Five screen captures plus a reflective essay on what you learned about predicting the upper and lower limits defined by 3 <em class="emphasis">σ</em>
+</td>
+                                    <td>Same as Best</td>
+                                    <td>Missing pictures; essay does not describe how the upper and lower limits of 3 <em class="emphasis">σ are calculated</em>
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                <li>Revise the document, if necessary. Save the document and submit it as directed by the instructor.</li>
+            </ol>
+        </div>
+    </div>
+    <div class="section" id="fwk-38087-ch10_s07_s02">
+        <h2 class="title editable block">Recognizing Variations Due to Unassignable and Assignable Causes</h2>
+        <p class="para editable block" id="fwk-38087-ch10_s07_s02_p01">W. Edwards Deming teaches that some variation is inevitable due to chance cause. A manager needs to recognize the difference between variations that are due to chance and those that indicate the presence of an assignable cause or a trend. If it appears that there is an assignable cause for variation in quality, a project manager might be required to identify and fix the problem. To communicate with process managers who are monitoring and sampling production, it is useful to understand the use of control charts.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s07_s02_p02">A run chart is a type of chart that shows variations from the mean as a function of time. The value of each sample is plotted to show the day it was taken and how it differs from the mean. If the variation is random, there will be roughly the same number of points above and below the mean.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s07_s02_p03">A spreadsheet can be used to simulate random variations in production. In this exercise, the spreadsheet uses its random number function to pick two numbers that are positive and two that are negative and adds them to the mean. Each number represents a variation that is between the control limits. Most of the time the positive and negative numbers cancel each other out and result in a sum that is close to the mean, but occasionally the four random factors add up to values that are far from the mean.</p>
+        <p class="para editable block" id="fwk-38087-ch10_s07_s02_p04">In this part of the exercise, you observe variations in a run chart and frequency distribution chart that are due to random effects. You generate the random numbers several times to see what production runs with random (unassignable) variations look like.</p>
+        <div class="section" id="fwk-38087-ch10_s07_s02_s01">
+            <h2 class="title editable block">Examine a Run Chart with Random Effects</h2>
+            <p class="para editable block" id="fwk-38087-ch10_s07_s02_s01_p01">Complete the exercise by following these instructions:</p>
+            <ol class="orderedlist block" id="fwk-38087-ch10_s07_s02_s01_l01">
+                <li>Navigate to the directory location where the exercise files for this unit are located and open <a class="link" href="http://www.gone.2012books.lardbucket.org/sites/all/files/Ch10ControlChart.xls"><em class="emphasis">Ch10ControlChart.xls</em></a> in a spreadsheet program such as MS Excel.</li>
+                <li>Observe that in cells B4 through B23 the RAND function is used to simulate the effects of four random influences on each day of production for a twenty-day period.</li>
+                <li>
+                    <p class="para">Scroll the screen or adjust the zoom so that you can see both charts. See <a class="xref" href="#fwk-38087-ch10_s07_s02_s01_f01">Figure 10.16 "Screen Adjusted to Show Both Charts"</a>.</p>
+
+                </li>
+                <li>On your keyboard, near the top, press the F9 key. The random functions pick new numbers. Observe how the samples on the run chart change and how the frequency distribution changes.</li>
+                <li>
+                    <p class="para">Press the F9 key several more times until you get a set of samples that are grouped close to the mean like the example shown in <a class="xref" href="#fwk-38087-ch10_s07_s02_s01_f02">Figure 10.17 "Most Samples near the Mean"</a>.</p>
+
+                </li>
+                <li>Open a word processing document and then save it as <em class="emphasis">Ch10RunChartStudentName.doc</em>. Switch back to the spreadsheet and capture the screen. Switch to the word processing document and paste the screen into the document. Your values will differ from those in the figure.</li>
+                <li>According to Deming, it is not productive to hold employees to quality standards that they do not control. Consider the effect on employee moral if this set of samples was taken as the standard by which the next run would be judged.</li>
+                <li>
+                    <p class="para">Press the F9 key again and stop at a set of samples that has a greater variation, such as the example shown in <a class="xref" href="#fwk-38087-ch10_s07_s01_s01_f03">Figure 10.15 "Normal Distribution with Larger Standard Deviation"</a>.</p>
+
+                </li>
+                <li>Capture this screen and paste it into <em class="emphasis">Ch10RunChartStudentName.doc</em>. Because of the chance-cause random factors, this set of data has more variation. If employee performance were punished or rewarded based on this data, they would become discouraged because they do not control the quality. Leave both files open.</li>
+            </ol>
+        </div>
+        <div class="section" id="fwk-38087-ch10_s07_s02_s02">
+            <h2 class="title editable block">Examine a Run Chart with Assignable Cause</h2>
+            <p class="para editable block" id="fwk-38087-ch10_s07_s02_s02_p01">Complete the exercise by following these instructions:</p>
+            <p class="para editable block" id="fwk-38087-ch10_s07_s02_s02_p02">An assignable cause can be mixed in with the chance-cause random effects. In this part, you introduce a factor that causes the samples to display a trend. You run the simulation several times to learn how to recognize a set of data that is a mix of random (chance-cause) factors and a trend that is probably from an assignable cause.</p>
+            <ol class="orderedlist block" id="fwk-38087-ch10_s07_s02_s02_l01">
+                <li>In the spreadsheet, click cell B2. Type <em class="emphasis">.03</em> and then, on the Formula bar, click the Enter button. The random functions are recalculated, but each value is increased by .03 over its predecessor.</li>
+                <li>
+                    <p class="para">Press the F9 key several times and observe how this trend appears within the samples such as the example in <a class="xref" href="#fwk-38087-ch10_s07_s02_s02_f01">Figure 10.19 "Trend That Is Probably Due to an Assignable Cause"</a>.</p>
+
+                </li>
+                <li>It is clear that action must be taken soon to prevent the next batch of samples from exceeding the control limit. The process manager might create a project to identify the assignable cause and take the necessary action, such as replacing a worn-out piece of equipment. Choose an example where the upward trend is most apparent. Capture the screen and paste it into the word processing document.</li>
+                <li>Close the spreadsheet without saving the changes.</li>
+                <li>In the word processing document, below the last picture, write a reflective essay of between one hundred and two hundred words that describes how you would recognize the difference between run charts that show assignable and unassignable causes. Discuss the effect on morale if one of the runs with random values that are close to the mean is chosen as the standard of performance by which workers would be measured.</li>
+                <li>Leave the word processing document open.</li>
+                <li>
+                    <p class="para">Review your work and use the following rubric to determine its adequacy:</p>
+                    <div class="informaltable" id="fwk-38087-ch10_s07_s02_s02_tx01" frame="all">
+                        <table cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Element</th>
+                                    <th>Best</th>
+                                    <th>Adequate</th>
+                                    <th>Poor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>File name</td>
+                                    <td>Ch10RunChartStudentName.doc</td>
+                                    <td>Ch10RunChartStudentName.docx</td>
+                                    <td>Did not include name in file name</td>
+                                </tr>
+                                <tr>
+                                    <td>Recognize assignable and unassignable causes of statistical variation</td>
+                                    <td>Three screen captures that show two random causes and one assignable cause; an essay that describes how to recognize the difference and the effect on worker morale if a run with low random variation is chosen as a standard</td>
+                                    <td>Same as Best</td>
+                                    <td>Missing screen; essay does not address both requirements</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                <li>Save the file and submit it as directed by the instructor.</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s12-06-exercises.html"><img src="shared/images/batch-left.png"></a> <a href="s12-06-exercises.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s13-01-defining-risk.html">Next Section</a> <a href="s13-01-defining-risk.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

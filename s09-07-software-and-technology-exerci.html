@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Software and Technology Exercise</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s09-06-exercises.html"><img src="shared/images/batch-left.png"></a> <a href="s09-06-exercises.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s10-01-types-of-schedules.html">Next Section</a> <a href="s10-01-types-of-schedules.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="fwk-38087-ch07_s07" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">7.7</span> Software and Technology Exercise</h2>
+    <div class="learning_objectives editable block" id="fwk-38087-ch07_s07_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="fwk-38087-ch07_s07_l01">
+            <li>Use a spreadsheet to calculate cash flow, payback, and Internal Rate of Return (IRR).</li>
+        </ol>
+    </div>
+    <div class="section" id="fwk-38087-ch07_s07_s01">
+        <h2 class="title editable block">Create a Worksheet to Calculate Cash Flow, Payback, and IRR</h2>
+        <p class="para editable block" id="fwk-38087-ch07_s07_s01_p01">Projects that purport to save money or earn additional money in the future as a result of spending money now can be evaluated and compared using basic financial tools. A simple payback analysis determines how long it will be before the result of the project pays off the initial investment, and the Internal Rate of Return (IRR) is a percentage similar to an interest rate that can be compared to other projects or investment opportunities.</p>
+        <div class="section" id="fwk-38087-ch07_s07_s01_s01">
+            <h2 class="title editable block">How to Set Up a Spreadsheet to Show Cash Flow, Simple Payback, and Calculate IRR</h2>
+            <ol class="orderedlist block" id="fwk-38087-ch07_s07_s01_s01_l01">
+                <li>
+                    <p class="para">Start Excel 2007. In cells A1 through A5, type <em class="emphasis">Payback and Internal Rate of Return</em>, <em class="emphasis">Year</em>, <em class="emphasis">Expense</em>, <em class="emphasis">Income/Savings</em>, <em class="emphasis">Annual Cash Flow</em>, <em class="emphasis">Cumulative Cash Flow</em>, and <em class="emphasis">Internal Rate of Return (IRR)</em>. Drag the boundary between column A and B to the right to increase the width of column A, as shown in <a class="xref" href="#fwk-38087-ch07_s07_s01_s01_f01">Figure 7.14 "Widen Column to Fit Labels"</a>.</p>
+                    <div class="figure large" id="fwk-38087-ch07_s07_s01_s01_f01">
+                    <p class="title"><span class="title-prefix">Figure 7.14</span> Widen Column to Fit Labels</p>
+                        <img src="section_09/5454fb3ce2d57d851cbc2ba52b47b155.jpg">
+                    </div>
+                </li>
+                <li>
+                    <p class="para">In cell B2, type <em class="emphasis">0,</em> and in cell C2, type <em class="emphasis">1.</em> Click and drag across cells B2 and C2 to select them both. Identify the fill handle at the lower right corner of C2 as shown in <a class="xref" href="#fwk-38087-ch07_s07_s01_s01_f02">Figure 7.15 "Use Fill Handle to Extend a Pattern of Intervals"</a>. Selecting the first two numbers in a sequence determines the interval of the sequence.</p>
+
+                </li>
+                <li>Click and drag the fill handle to the right to cell H2. The sequence of years from zero to six is filled into cells B2 through H2.</li>
+                <li>In cell B3, type <em class="emphasis">$(100,000)</em> and then press the Enter key. Typing a number with the dollar sign and comma sets the formatting automatically. The parentheses indicate a negative number that the computer may display in red.</li>
+                <li>
+                    <p class="para">In cell C3, type <em class="emphasis">$(2,000)</em> and then press Enter. Click cell C3 again to select it. Drag the fill handle to the right to cell H3. Because a single value was selected, the same value is filled into cells D3 through H3, as shown in <a class="xref" href="#fwk-38087-ch07_s07_s01_s01_f03">Figure 7.16 "Initial Expense in Year Zero Followed by Annual Expenses"</a>.</p>
+
+                </li>
+                <li>In cell C4, type <em class="emphasis">25,000</em> and then press Enter. Use the procedure you practiced in step 5 to fill this value into cells D4 through H4.</li>
+                <li>In cell B5, type <em class="emphasis">=B4+B3</em> and then press Enter. This formula adds the positive and negative cash flows in the two cells above its location to find the annual cash flow.</li>
+                <li>
+                    <p class="para">Click cell B5 and then drag the fill handle to cell H5 to fill this formula into the adjacent cells. The formulas adapt to their new locations to add the two cells immediately above. Click cell D5 to observe how the formulas change to sum the cells above, as shown in <a class="xref" href="#fwk-38087-ch07_s07_s01_s01_f04">Figure 7.17 "Formula to Calculate a Running Total"</a>.</p>
+
+                </li>
+                <li>In cell B6, type <em class="emphasis">=B5</em> and then press Enter. This formula transfers the value for the initial expense to cell B6 so the next formula can be used in the remaining cells.</li>
+                <li>In cell C6, type <em class="emphasis">=B6+C5</em> and then press Enter. This formula sums the value from the previous year with the annual cash flow for the current year.</li>
+                <li>
+                    <p class="para">Click cell C6 and then drag the fill handle to cell H6. Observe from the change in color or from the missing parentheses that the cumulative cash flow becomes positive in year five, as shown in <a class="xref" href="#fwk-38087-ch07_s07_s01_s01_f05">Figure 7.18 "Initial Investment Paid Back in Year Five"</a>.</p>
+
+                </li>
+                <li>
+                    <p class="para">In cell B7, type <em class="emphasis">=IRR(B5:H5)</em> and then press Enter. The spreadsheet program uses a built-in program named IRR to calculate the internal rate of return using the annual cash flows in cells B5 through H5 and determines the rate of return is 10 percent, as shown in <a class="xref" href="#fwk-38087-ch07_s07_s01_s01_f06">Figure 7.19 "IRR Can Be Used to Choose between Very Different Projects"</a>. Notice that the IRR function uses the annual cash flows in row 5 and not the cumulative cash flow in row 6.</p>
+
+                </li>
+                <li>
+                    <p class="para">Click cell A1. Type <em class="emphasis">Payback and Internal Rate of Return</em> and then press Enter. Click and drag cells A1 through H1 to select them. On the ribbon, in the Alignment group, click the Merge and Center button. The new title is centered across the columns, as shown in <a class="xref" href="#fwk-38087-ch07_s07_s01_s01_f07">Figure 7.20 "Center the Title"</a>. This worksheet can be used and extended to determine simple payback and IRR for a variety of projects.</p>
+
+                </li>
+                <li>In cell A9, type your name.</li>
+                <li>Check your formulas and calculations. Change the initial expense in cell B3 to $(90,000). The values that depend on the initial expense should all change and produce new cash flows and a different IRR of 14 percent.</li>
+                <li>Click cell B7 to select it and to show the IRR function on the formula bar.</li>
+                <li>Capture a screen that shows the recalculated values, the IRR function, and your name. Open a word processing file and paste the screen into the document. Save the word processing file as <em class="emphasis">Ch07FinanceStudentName.doc</em> and close it.</li>
+                <li>Save the worksheet and close it. Keep it where you can find it to demonstrate the provenance of your work, if necessary.</li>
+                <li>
+                    <p class="para">Review your work and use the following rubric to determine its adequacy:</p>
+                    <div class="informaltable" id="fwk-38087-ch07_s07_s01_s01_tx01" frame="all">
+                        <table cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Element</th>
+                                    <th>Best</th>
+                                    <th>Adequate</th>
+                                    <th>Poor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>File name</td>
+                                    <td>Ch07FinanceStudentName.doc</td>
+                                    <td>Ch07FinanceStudentName.docx</td>
+                                    <td>Other name</td>
+                                </tr>
+                                <tr>
+                                    <td>Use a spreadsheet to calculate cash flow, payback, and Internal Rate of Return (IRR)</td>
+                                    <td>Screen capture of spreadsheet <em class="emphasis">after</em> the value in B3 is changed to negative $90,000, with cell B7 selected to show the IRR function on the toolbar</td>
+                                    <td>Same as Best</td>
+                                    <td>Incorrect formulas; incorrect range for the IRR function; negative numbers not formatted; name not shown</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                <li>Save the file and submit it as directed by the instructor.</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s09-06-exercises.html"><img src="shared/images/batch-left.png"></a> <a href="s09-06-exercises.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s10-01-types-of-schedules.html">Next Section</a> <a href="s10-01-types-of-schedules.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>
